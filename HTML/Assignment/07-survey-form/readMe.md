@@ -3,7 +3,7 @@ Build an app that is functionally similar to https://survey-form.freecodecamp.ro
 
 ## User Stories:
 
-You should have a page title in an h1 element with an id of title
+You should have a a page title in an h1 element with an id of title
 
 You should have a short explanation in a p element with an id of description
 
@@ -14,11 +14,13 @@ Inside the form element, you are required to enter your name in an input field t
 Inside the form element, you are required to enter your email in an input field that has an id of email
 
 If you enter an email that is not formatted correctly, you will see an HTML5 validation error
+
 Inside the form, you can enter a number in an input field that has an id of number
 
 The number input should not accept non-numbers, either by preventing you from typing them or by showing an HTML5 validation error (depending on your browser).
 
 If you enter numbers outside the range of the number input, which are defined by the min and max attributes, you will see an HTML5 validation error
+
 For the name, email, and number input fields, you can see corresponding label elements in the form, that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label"
 
 For the name, email, and number input fields, you can see placeholder text that gives a description or instructions for each field
