@@ -1,0 +1,8 @@
+div {
+  background-color: red;
+  width: 65px;
+  height: 65px;
+  border: 1px solid black;
+  margin-left: 10px;
+  background-clip: content-box;
+}
