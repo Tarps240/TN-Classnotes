@@ -7,7 +7,7 @@
 body {
   background-color: lemonchiffon;
 }
-
+/* TODO: Label selector type */
 header,
 footer {
   width: 100%;
@@ -16,7 +16,7 @@ footer {
   color: #f0ead6;
   background-color: #191970;
 }
-
+/* TODO: Label selector type */
 figure {
   width: 200px;
   background-color: #f0ead6;

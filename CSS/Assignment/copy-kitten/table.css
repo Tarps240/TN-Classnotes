@@ -1,0 +1,27 @@
+#cell-1 {
+    padding: 2px;
+    border-right: solid 2px;
+    border-bottom: solid 2px;
+}
+
+#cell-1:hover {
+    background-color: crimson;
+}
+
+#cell-2 {
+    padding: 2px;
+    /* border: solid 0 2 2 2; */
+}
+
+#cell-2:hover {
+    background-color: crimson;
+}
+
+#cell-5 {
+    padding: 2px;
+    border: solid 2px;
+}
+
+#cell-5:hover {
+    background-color: crimson;
+}
