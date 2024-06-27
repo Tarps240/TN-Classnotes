@@ -1,0 +1,17 @@
+.section {
+  /*Sets the height and width of the section */
+  width: 200px;
+  height: 200px
+}
+
+.box-orange {
+  background-color: orange;
+}
+
+.box-blue {
+  background-color: blue;
+}
+
+#box-yellow {
+  background-color: yellow;
+}

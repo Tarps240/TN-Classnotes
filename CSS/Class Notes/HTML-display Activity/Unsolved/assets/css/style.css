@@ -15,7 +15,6 @@ ul {
 /* List items in navigation bar */
 li {
   /* TODO: Add your code here */
-  display: inline;
   list-style-type: none;
   font-size: 40px;
 }
@@ -23,7 +22,6 @@ li {
 /* Boxes */
 img {
   /* TODO: Add your code here */
-  display: block;
   margin: 0 auto;
 }
 
@@ -42,4 +40,5 @@ img {
 /* Box 3 */
 #image-3 {
   /* TODO: Add your code here */
+  display: none;
 }

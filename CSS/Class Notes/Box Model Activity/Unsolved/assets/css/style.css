@@ -9,8 +9,10 @@ img {
   width: 200px;
   height: 200px;
   background-color: lightblue;
-  margin: 15px;
-  margin-top: 21px;
+  /* TODO: Add a margin property */
+  margin:20px;
+  /* TODO: Add a padding property */
   padding: 20px;
-  border: solid 10px #160985;
+  /* TODO: Add a border property */
+  border: 9px solid blue;
 }

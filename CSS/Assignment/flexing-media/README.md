@@ -15,7 +15,7 @@ Here are the different column layouts we want:
 
 ### Setting Up
 
-3. Whether you used a snippet or not, let's use Emmet to make 20 divs with the "square" class (defined already in our CSS file!) and a number in each one. Type the following code (without backticks if you're viewing this as straight markdown) into the body and hit enter: `div.square{$}*20`. Now you've got most of the html you need for this assignment and you can get started!
+3. Whether you used a snippet or not, let's  use Emmet to make 20 divs with the "square" class (defined already in our CSS file!) and a number in each one. Type the following code (without backticks if you're viewing this as straight markdown) into the body and hit enter: `div.square{$}*20`. Now you've got most of the html you need for this assignment and you can get started!
 
 Try to use these emmet and/or snippets whenever you can; they'll save you a lot of time!
 

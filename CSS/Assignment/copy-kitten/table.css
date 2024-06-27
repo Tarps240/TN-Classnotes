@@ -17,6 +17,16 @@
     background-color: crimson;
 }
 
+#cell-3 {
+    padding: 2px;
+    border-left: solid 2px;
+    border-bottom: solid 2px;
+}
+
+#cell-3:hover {
+    background-color: crimson;
+}
+
 #cell-5 {
     padding: 2px;
     border: solid 2px;

@@ -36,20 +36,3 @@ section {
   background-color: goldenrod;
 }
 
-/* sets display elements with a class selector of inline to inline */
-
-.display-inline {
-  display: inline;
-}
-
-/* sets display elements with a class selector of block to block */
-
-.display-block {
-  display: block;
-}
-
-/* sets display elements with a class selector of none to none */
-
-.display-none {
-  display: none;
-}

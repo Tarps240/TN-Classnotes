@@ -1,0 +1,18 @@
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  border: 10px solid darkblue;
+  background-color: lightblue;
+}
+
+section {
+  height: 400px;
+  width: 80%;
+  margin: 30px auto;
+  border: 10px solid black;
+}
