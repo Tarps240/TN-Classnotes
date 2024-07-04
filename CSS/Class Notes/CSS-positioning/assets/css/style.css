@@ -16,3 +16,24 @@ section {
   margin: 30px auto;
   border: 10px solid black;
 }
+
+#fixed-box {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.absolute-section {
+  position: relative;
+}
+
+#absolute-box {
+  position: absolute;
+  top: 50px;
+  right: 100px;
+}
+
+#relative-box {
+  position: relative;
+  left: 200px;
+}

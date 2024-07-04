@@ -57,3 +57,20 @@ footer {
   border: 1px solid black;
 }
 
+@media screen and (max-width: 992px) {
+  header {
+    background-color: red;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    background-color: blueviolet;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sample-img {
+    background-color: chartreuse;
+  }
+}

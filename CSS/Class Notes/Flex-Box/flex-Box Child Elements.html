@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Child Elements (Items)</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Flexbox Child Elements (Items)</h1>
+        <p>The direct child elements of a flex container automatically become flexible (flex) items.</p>
+        <p>The flex item properties are:</p>
+        <ol>
+            <li>order</li>
+            <li>flex-grow</li>
+            <li>flex-shrink</li>
+            <li>flex-basis</li>
+            <li>flex</li>
+            <li>align-self</li>
+        </ol>
+    </header>
+
+    <section class="section-container">
+        <h2>Flexible Items</h2>
+        <p>All direct children of a flexible container become flexible items.</p>
+        <div class="flex-container flex-example-1">
+            <div>Item 1</div>
+            <div>Item 2</div>
+            <div>Item 3</div>
+        </div>
+        <p>Here, all items inside the flex-container are automatically flexible items.</p>
+    </section>
+
+    <section class="section-container">
+        <h2>Ordering Flex Items</h2>
+        <p>The <code>order</code> property changes the order of flex items:</p>
+        <div class="flex-container flex-example-2">
+            <div>Item 1</div>
+            <div>Item 2</div>
+            <div>Item 3</div>
+        </div>
+        <p>Items can be visually reordered by setting the <code>order</code> property. Lower values come first by
+            default.</p>
+    </section>
+
+    <section class="section-container">
+        <h2>Controlling Flex Growth</h2>
+        <p>The <code>flex-grow</code> property specifies how much a flex item can grow compared to other items:</p>
+        <div class="flex-container flex-example-3">
+            <div>Item 1</div>
+            <div>Item 2</div>
+            <div>Item 3</div>
+        </div>
+        <p>Items with higher <code>flex-grow</code> values grow more when there's extra space available. Default is 0,
+            meaning no growth.</p>
+    </section>
+
+    <section class="section-container">
+        <h2>Controlling Flex Shrinking</h2>
+        <p>The <code>flex-shrink</code> property specifies how much a flex item can shrink compared to other items:</p>
+        <div class="flex-container flex-example-4">
+            <div>Item 1</div>
+            <div>Item 2</div>
+            <div>Item 3</div>
+        </div>
+        <p>Items with higher <code>flex-shrink</code> values shrink more when there's not enough space. Default is 1,
+            meaning items shrink equally.</p>
+    </section>
+
+    <section class="section-container">
+        <h2>Setting Flex Basis</h2>
+        <p>The <code>flex-basis</code> property sets the initial size of a flex item before growing or shrinking:</p>
+        <div class="flex-container flex-example-5">
+            <div>Item 1</div>
+            <div>Item 2</div>
+            <div>Item 3</div>
+        </div>
+        <p>Default is <code>auto</code>, which means items size based on content. You can set specific sizes using
+            <code>px</code>, <code>%</code>, or other units.</p>
+    </section>
+
+    <section class="section-container">
+        <h2>Shorthand Flex Property</h2>
+        <p>The <code>flex</code> property is a shorthand for <code>flex-grow</code>, <code>flex-shrink</code>, and
+            <code>flex-basis</code>:</p>
+        <div class="flex-container flex-example-6">
+            <div>Item 1</div>
+            <div>Item 2</div>
+            <div>Item 3</div>
+        </div>
+        <p>Example: <code>flex: 1 1 150px;</code> means grow factor 1, shrink factor 1, basis 150px.</p>
+    </section>
+
+    <section class="section-container">
+        <h2>Aligning Individual Items</h2>
+        <p>The <code>align-self</code> property overrides the align-items setting for individual flex items:</p>
+        <div class="flex-container flex-example-7">
+            <div>Item 1</div>
+            <div>Item 2</div>
+            <div>Item 3</div>
+        </div>
+        <p><code>align-self</code> allows you to align specific items differently within the flex container. Values
+            include <code>flex-start</code>, <code>center</code>, <code>flex-end</code>, <code>baseline</code>, and
+            <code>stretch</code>.</p>
+    </section>
+
+</body>
+
+</html>

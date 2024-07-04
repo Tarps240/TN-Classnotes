@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Examples</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Create a Flex Container</h1>
+        <p>Before the Flexbox Layout module, there were four layout modes:</p>
+        <ul>
+            <li>Block, for sections in a webpage</li>
+            <li>Inline, for text</li>
+            <li>Table, for two-dimensional table data</li>
+            <li>Positioned, for explicit position of an element</li>
+        </ul>
+    </header>
+
+    <section class="section-container">
+        <h2>The flex container properties are:</h2>
+        <ol>
+            <li>flex-direction</li>
+            <li>flex-wrap</li>
+            <li>flex-flow</li>
+            <li>justify-content</li>
+            <li>align-items</li>
+            <li>align-content</li>
+        </ol>
+    </section>
+
+    <div class="flex-container1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
+
+    <section class="section-container">
+        <h2>flex-direction</h2>
+        <ol>
+            <li>The <strong>row</strong> value stacks the flex items horizontally (by default from left to right on
+                <strong>main axis</strong>)</li>
+            <li>The <strong>column</strong> value stacks the flex items vertically (from top to bottom on <strong>cross
+                    axis</strong>)</li>
+            <li>The <strong>column-reverse</strong> value stacks the flex items vertically (but from bottom to top)</li>
+            <li>The <strong>row-reverse</strong> value stacks the flex items horizontally (but from right to left)</li>
+            <li>The wrap-reverse value specifies that the flexible items will wrap if necessary, in reverse order</li>
+        </ol>
+    </section>
+
+    <section class="section-container">
+        <h2>flex-wrap</h2>
+        <p>The "flex-wrap: wrap;" specifies that the flex items will wrap if necessary:</p>
+        <div class="flex-container2">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+        </div>
+        <p>Try resizing the browser window.</p>
+        <ol>
+            <li>The flex-wrap property specifies whether the flex items should wrap or not.</li>
+            <li>The wrap value specifies that the flex items will wrap if necessary</li>
+            <li>The nowrap value specifies that the flex items will not wrap (this is default)</li>
+        </ol>
+    </section>
+
+    <section class="section-container">
+        <h2>flex-flow</h2>
+        <p>The flex-flow property is a shorthand property for the flex-direction and the flex-wrap properties.</p>
+        <div class="flex-container3">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+        </div>
+        <p>Try resizing the browser window.</p>
+        <ol>
+            <li>The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap
+                properties.</li>
+        </ol>
+    </section>
+
+    <section class="section-container">
+        <h2>justify-content</h2>
+        <p>The "justify-content: center;" aligns the flex items at the center of the container:</p>
+        <div class="flex-container4">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <ol>
+            <li>The justify-content property is used to align the flex items</li>
+            <li>The center value aligns the flex items at the center of the container:</li>
+            <li>The flex-start value aligns the flex items at the beginning of the container (this is default):</li>
+            <li>The flex-end value aligns the flex items at the end of the container</li>
+            <li>The space-around value displays the flex items with space before, between, and after the lines</li>
+            <li>The space-between value displays the flex items with space between the lines</li>
+        </ol>
+    </section>
+
+    <section class="section-container">
+        <h2>align-items</h2>
+        <p>The "align-items: center;" aligns the flex items in the middle of the container:</p>
+        <div class="flex-container5">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <ol>
+            <li>The align-items property is used to align the flex items.</li>
+            <li>The center value aligns the flex items in the middle of the container</li>
+            <li>The flex-start value aligns the flex items at the top of the container</li>
+            <li>The flex-end value aligns the flex items at the bottom of the container</li>
+            <li>The stretch value stretches the flex items to fill the container (this is default)</li>
+            <li>The baseline value aligns the flex items such as their baselines aligns></li>
+        </ol>
+    </section>
+
+    <section class="section-container">
+        <h2>align-content</h2>
+        <p>The "align-content: space-between;" displays the flex lines with equal space between them:</p>
+        <div class="flex-container6">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+        </div>
+        <ol>
+            <li>The align-content property is used to align the flex lines.</li>
+            <li>The space-between value displays the flex lines with equal space between them</li>
+            <li>The space-around value displays the flex lines with space before, between, and after them</li>
+            <li>The stretch value stretches the flex lines to take up the remaining space (this is default)</li>
+            <li>The center value displays the flex lines in the middle of the container</li>
+            <li>The flex-start value displays the flex lines at the start of the container</li>
+            <li>The flex-end value displays the flex lines at the end of the container</li>
+        </ol>
+    </section>
+
+    <section class="section-container">
+        <h2>Perfect Centering</h2>
+        <p>A flex container with both the justify-content and the align-items properties set to <em>center</em> will
+            align
+            the item(s) in the center (in both axes).</p>
+        <div class="flex-container7">
+            <div></div>
+        </div>
+    </section>
+
+</body>
+
+</html>

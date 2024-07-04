@@ -1,0 +1,78 @@
+body {
+    font-family: tahoma;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    width: 100%;
+    font-size: 2em;
+}
+
+header {
+    background: rgb(0, 0, 0);
+    letter-spacing: 6px;
+    padding: 20px;
+    color: white;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 30px;
+}
+
+/* CSS Cards */
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid #ccc;
+    background-color: ivory;
+    margin: 25px;
+    padding: 25px;
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.3);
+}
+
+@media screen and (min-width: 50em) {
+    .card {
+        flex-basis: 325px;
+    }
+    header h1 {
+        font-size: 5em;
+    }
+}
+
+.icons {
+    font-size: 8em;
+    padding: 25px;
+}
+
+button, .button {
+    background: royalblue;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.blue {
+    background: teal;
+}
+
+/* Table Styles */
+
+td {
+    padding: 10px;
+}
+
+table {
+    margin: auto;
+}

@@ -9,8 +9,8 @@
 }
 
 #cell-2 {
-    padding: 2px;
-    /* border: solid 0 2 2 2; */
+    margin: 2px;
+    border: solid 0 2 2 2;
 }
 
 #cell-2:hover {
@@ -27,11 +27,55 @@
     background-color: crimson;
 }
 
+#cell-4 {
+    margin: 2px;
+    border-right: solid 2px;
+}
+
+#cell-4:hover {
+    background-color: crimson;
+}
+
 #cell-5 {
     padding: 2px;
     border: solid 2px;
 }
 
 #cell-5:hover {
+    background-color: crimson;
+}
+
+#cell-6 {
+    padding: 2px;
+    border-left: solid 2px;
+}
+
+#cell-6:hover {
+    background-color: crimson;
+}
+
+#cell-7 {
+    padding: 2px;
+    border: 0px 2px 2px 0px;
+}
+
+#cell-7:hover {
+    background-color: crimson;
+}
+
+#cell-8 {
+    padding: 2px;
+}
+
+#cell-8:hover {
+    background-color: crimson;
+}
+
+#cell-9 {
+    padding: 2px;
+    border-bottom: solid 2px;
+}
+
+#cell-9:hover {
     background-color: crimson;
 }

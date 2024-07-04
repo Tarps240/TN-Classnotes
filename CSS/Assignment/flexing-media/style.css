@@ -1,10 +1,11 @@
 .square {
-  background-color: green;
-  font-size: 4em;
-  color: red;
+  background-color: rgb(0, 0, 0);
+  font-size: 3em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(255, 255, 255);
   width: 80px;
   height: 80px;
-  border: 2px solid orange;
+  border: 2px solid goldenrod;
 }
 
 section {
@@ -20,7 +21,7 @@ section {
 }
 
 @media (max-width: 800px) and (min-width: 600px) {
-  section {
-    display: none;
+  .first {
+    flex-wrap: wrap;
   }
 }

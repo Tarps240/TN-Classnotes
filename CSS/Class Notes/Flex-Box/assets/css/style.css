@@ -1,0 +1,242 @@
+ /* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.section-container {
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Flex Container Styles */
+.flex-container1 {
+ /* display: flex;*/
+  gap: 10px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.flex-container1 div {
+  background-color: #6495ed;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.flex-container2 {
+  /*display: flex;
+  flex-wrap: wrap;*/
+  gap: 10px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.flex-container2 div {
+  background-color: #87ceeb;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.flex-container3 {
+  /*display: flex;
+  flex-flow: column wrap;*/
+  /* enter code from above here */
+
+  gap: 10px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.flex-container3 div {
+  background-color: #90ee90;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.flex-container4 {
+ /*display: flex;
+  justify-content: center;*/
+  /* enter code from above here */
+
+  gap: 10px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.flex-container4 div {
+  background-color: #ffb6c1;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.flex-container5 {
+ /* display: flex;
+  align-items: center;
+  gap: 10px;*/
+  /* enter code from above here */
+
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.flex-container5 div {
+  background-color: #ffd700;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.flex-container6 {
+  /*display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  gap: 10px;*/
+  /* enter code from above here */
+
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.flex-container6 div {
+  background-color: #ff6347;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.flex-container7 {
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+  /* enter code from above here */
+
+  height: 200px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+.flex-container7 div {
+  width: 100px;
+  height: 100px;
+  background-color: #ffa07a;
+}
+
+
+
+
+
+
+ /*Flex Items Child ELements (Items)*/
+
+
+ /* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.section-container {
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Flex Container Styles */
+.flex-container {
+  /*display: flex;
+  gap: 10px;*/
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.flex-container div {
+  background-color: #6495ed;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Example-specific Styles */
+
+/* Example 2: Ordering Flex Items */
+.flex-example-2 {
+  flex-wrap: wrap;
+  
+}
+
+.flex-example-2 div {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  background-color: #87ceeb;
+}
+
+/* Example 3: Controlling Flex Growth */
+.flex-example-3 div {
+  flex-grow: 1;
+  background-color: #90ee90;
+}
+
+/* Example 4: Controlling Flex Shrinking */
+.flex-example-4 div {
+  flex-shrink: 1;
+  background-color: #ffb6c1;
+}
+
+/* Example 5: Setting Flex Basis */
+.flex-example-5 div {
+  flex-basis: 150px;
+  background-color: #ffd700;
+}
+
+/* Example 6: Shorthand Flex Property */
+.flex-example-6 div {
+  flex: 1 1 150px;
+  background-color: #ffa07a;
+}
+
+/* Example 7: Aligning Individual Items */
+.flex-example-7 div {
+  align-self: center;
+  background-color: #ff6347;
+}

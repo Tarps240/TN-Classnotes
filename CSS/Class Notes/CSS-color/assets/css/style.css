@@ -6,12 +6,15 @@
 
 .box-orange {
   background-color: orange;
+  color: #0000ff;
 }
 
 .box-blue {
   background-color: blue;
+  color: white;
 }
 
 #box-yellow {
   background-color: yellow;
+  color: rgb(84, 10, 84);
 }
