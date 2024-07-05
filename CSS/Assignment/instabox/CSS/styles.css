@@ -1,4 +1,18 @@
-#profiles {
+
+
+.logo {
+    height: 150px;
+    width: 150px;
     display: flex;
-    
+    justify-content: left;
+}
+
+.profiles {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profile-captions {
+    display: flex;
+    justify-content: space-evenly;
 }
