@@ -1,18 +1,26 @@
-
-
-.logo {
-    height: 150px;
-    width: 150px;
-    display: flex;
-    justify-content: left;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-.profiles {
-    display: flex;
+li {
+    display: block;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
     justify-content: space-evenly;
 }
 
-.profile-captions {
+.profile-pics {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
+}
+
+.insta-logo {
+    width: 25px;
+    height: 25px;
 }

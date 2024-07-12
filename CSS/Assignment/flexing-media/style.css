@@ -35,9 +35,9 @@ body {
 }
 
 @media (min-width: 1000px) {
-  .column {
-    display: grid;
-    grid-template-rows: 1fr;
+  .container {
+    display: flex;
+    flex-direction: column;
   }
 
   /* #first, #second {
