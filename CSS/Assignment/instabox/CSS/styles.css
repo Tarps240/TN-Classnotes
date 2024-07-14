@@ -18,9 +18,19 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding-top: 50px;
 }
 
-.insta-logo {
-    width: 25px;
-    height: 25px;
+.logo {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 50px;
+    left: 200px;
+}
+
+.info {
+    position: relative;
+    left: 590px;
+    top: 5px;
 }
