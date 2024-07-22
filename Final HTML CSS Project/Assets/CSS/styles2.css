@@ -1,0 +1,64 @@
+/* Header, Nav, and Flag styling. */
+
+.flag {
+    background-color: #92ccce;
+    color: black;
+    position: fixed;
+    left: 0;
+    padding-left: 80px;
+    padding-right: 10px;
+    height: 40px;
+}
+
+header {
+    position: fixed;
+    background-color: #31343d;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-right: 20px;
+    padding-left: 10px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+nav {
+    overflow: hidden;
+}
+
+nav a {
+    display: inline-block;
+    height: 25px;
+    color: #92ccce;
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-bottom: 3px solid ;
+}
+
+nav a:hover {
+    color: turquoise;
+}
+
+/* Hero Image styling */
+
+.hero-image {
+    padding-top: 90px;
+    height: 100px;
+}
+
+/* Main content styling  */
+
+aside {
+    display: flex;
+    justify-content: left;
+    color: #92ccce;
+}
+
+article {
+    display: flex;
+    width: 50%;
+}

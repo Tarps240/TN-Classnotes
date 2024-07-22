@@ -34,3 +34,18 @@ li {
     left: 590px;
     top: 5px;
 }
+
+#username {
+    font-size: 1.5em;
+}
+
+section {
+    display: flex;
+}
+
+.checkmark {
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+    padding-top: 28px;
+    padding-left: 8px;
