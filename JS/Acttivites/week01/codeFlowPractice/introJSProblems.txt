@@ -1,0 +1,20 @@
+let x = 3;
+let y = 5;
+x = y + 1; // Line 3
+y = x + 1; // Line 4
+x = y + 1; // Line 5
+y = x + 1; // Line 6
+
+// What is the value of x and y after line 3 executes?
+
+
+// What is the value of x and y after line 4 executes?
+
+
+// What is the value of x and y after line 4 executes?
+
+
+// What is the value of x and y after line 5 executes?
+
+
+// What is the value of x and y after line 6 executes?

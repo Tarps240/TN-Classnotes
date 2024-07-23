@@ -1,0 +1,4 @@
+//string
+//Boolean
+//undefined 
+//null

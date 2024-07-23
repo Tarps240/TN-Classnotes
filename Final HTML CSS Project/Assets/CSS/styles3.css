@@ -1,0 +1,46 @@
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 0.5fr 1.5fr 2.0fr 1.0fr;
+    grid-template-areas: 
+    "nav nav"
+    "nav content1"
+    "nav content2"
+    "nav content3"
+    "nav footer";
+}
+
+nav {
+    background: #92ccc9;
+    grid-area: nav;
+}
+
+main {
+    background: blue;
+}
+
+#sidebar {
+    background: green;
+    grid-area: sidebar;
+}
+
+#content1 {
+    background: #009dff;
+    grid-area: content1;
+}
+
+#content2 {
+    background: orchid;
+    grid-area: content2;
+}
+
+#content3 {
+    background: lightsalmon;
+    grid-area: content3;
+}
+
+footer {
+    background: rosybrown;
+    grid-area: footer;
+}
