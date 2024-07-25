@@ -16,9 +16,10 @@ nav {
     grid-area: nav;
 }
 
-main {
+/* main {
     background: blue;
-}
+    grid-area: content1;
+} */
 
 #sidebar {
     background: green;
