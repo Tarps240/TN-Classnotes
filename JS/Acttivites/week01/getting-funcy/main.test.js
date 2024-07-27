@@ -1,8 +1,38 @@
 /**********************************
  * YOUR CODE GOES HERE THIS TIME! *
  **********************************/
+let x = 3;
+let y = 10;
+let z = 4;
+let greeting = 'hello';
+let firstName = 'Scott';
+let callStatus = 'ringing';
 
+/* Functions */
 
+function double(x, 2) {
+  return x * 2;
+}
+
+function triple(y, 3) {
+  return y * 3;
+}
+
+function square(z, 4) {
+  return z ** z;
+}
+
+function beNice() {
+  greeting = "hello" + firstName;
+}
+
+function changeName() {
+  firstName = "Danger"
+}
+
+function hangUp() {
+  callStatus = "call ended"
+}
 
 /*********************************************************************************************************************
 
