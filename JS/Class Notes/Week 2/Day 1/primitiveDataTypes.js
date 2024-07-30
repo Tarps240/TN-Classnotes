@@ -13,7 +13,33 @@
 ///////////// Functions
 
 //Non-primitive data types  
-//Primitive Data Types are immutable (non-modifyable) You can't change them
+//Primitive Data Types are immutable (non-modifyable) You can't change them, they are compared by values and not the datatype.
+let word = "javaScript";
+word[0] = "y";
+console.log(word);
+let numberOne = 1;
+let numberTwo = "1";
+console.log(numberOne == numberTwo);
+let js = "javaScript";
+let python = "Python";
+console.log(js == python);
+//Non-Primitive Data Types are mutable (you can change them), the values are not comparable.
 
+let numbers = [1, 2, 3, 4];
+//             0  1  2  3  Array values start at 0.
+let numbers2 = [1, 2, 3, 4];
+numbers[0] = 10;
+console.log(numbers);
+console.log(numbers == numbers2);
 
-//Non-Primitive Data Types are mutable (you can change them)
+let car = {
+    color: "Red",
+    make: "Honda",
+}
+
+let car2 = {
+    color: "Red",
+    make: "Honda",
+}
+let car3 = car;
+console.log(car == car3);
