@@ -2,10 +2,13 @@
 ///////////////////////////////////////////primitive data type/////////////////////////////
 
 //three different kinds of strings 
-
+let city = 'Clarksville,';
+let language = "American Sign Language";
+let sentence = `is not very common here.`;
 
 //concatinating 
-
+let concatination = city + " " + language + " "+ sentence;
+console.log(concatination);
 
 
 ///////////////////Escape sequence characters////////////////////////

@@ -13,8 +13,10 @@ const pi = 3.14;
 const boilingPoint = 212;
 let bodyTemp = 98.6;
 
+console.log(pi);
 //////When using numbers we have object methods that allow as to do maths with our number data types. Here is a list of examples of different Math method. If you want to understand when to use each then look in w3schools. 
-
+const PI = Math.PI;
+console.log(PI);
 
 
 
@@ -29,7 +31,6 @@ let bodyTemp = 98.6;
 //Absolute value
 
 //Square root
-
 
 // Power
 

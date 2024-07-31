@@ -41,5 +41,6 @@ let car2 = {
     color: "Red",
     make: "Honda",
 }
+
 let car3 = car;
 console.log(car == car3);
