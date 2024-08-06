@@ -44,3 +44,4 @@ let car2 = {
 
 let car3 = car;
 console.log(car == car3);
+console.log(typeof (car3));
