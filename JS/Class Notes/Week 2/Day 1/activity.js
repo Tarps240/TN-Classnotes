@@ -20,8 +20,8 @@ console.log(typeof num !== num1);
 
 // Check if parseFloat('9.8') is equal to 10 if not make it exactly equal with 10.
 
-let num2 = parseFloat('9.8')
-let num3 = 10
+let num2 = parseFloat('9.8');
+let num3 = 10;
 
 console.log(typeof(num2) === typeof(num3));
 
