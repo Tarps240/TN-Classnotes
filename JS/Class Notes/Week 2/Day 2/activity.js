@@ -41,12 +41,6 @@ console.log(typeof(num2) === typeof(num3));
 
 // Write three JavaScript statement which provide falsy value.
 
-const friends = 0;
-
-if (friends.length) {
-    return 'No friends!';
-  };
-  
 
 
 // Figure out the result of the following comparison expression first without using console.log(). After you decide the result confirm it using console.log()
@@ -99,12 +93,36 @@ console.log(4 === '4');
 // !(4 > 3 && 10 < 12)
 // !(4 > 3 && 10 > 12)
 // !(4 === '4')
+
+
+
 // There is no 'on' in both dragon and python
-// Use the Date object to do the following activities
+
+
+
+// Use the Date object to do the following activities.
+
+// Access the Date operator and assign it to currentDate.
+let currentDate = new Date();
+
+// Access the Year within the Date and assign it to currentYear.
+let currentYear = currentDate.getFullYear();
+
+//Access the Month within the Date and add 1 since it starts at 0, assign it to currentMonth.
+let currentMonth = currentDate.getMonth() + 1;
 
 // What is the year today?
+
+console.log(currentYear);
+
 // What is the month today as a number?
+
+console.log(currentMonth);
+
 // What is the date today?
+
+console.log(Date());
+
 // What is the day today as a number?
 // What is the hours now?
 // What is the minutes now?
