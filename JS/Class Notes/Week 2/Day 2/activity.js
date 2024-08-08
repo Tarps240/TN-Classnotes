@@ -22,7 +22,7 @@ const num = '10';
 const num1 = 10;
 
 
-console.log(typeof num === num1);
+console.log(typeof num == num1);
 
 // Check if parseInt('9.8') is equal to 10
 

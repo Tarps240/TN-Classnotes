@@ -3,16 +3,43 @@
 
 //What is a boolean data type? 
 
+let isRaining = false;
+let isLightOn = true;
+let trueValue = 4 > 3;
+let falseValue = 4 < 3;
+
+console.log(isRaining);
+console.log(isLightOn);
+console.log(trueValue);
+console.log(falseValue);
 
 /////////////////////what are Truthy values?/////////////////////////////
+
+// Any value that is not falsy is truthy.
+
+true
+1
+[1, 2, 3]
+
 
 
 ///////////////////////what are falsy values?/////////////////////////// 
 
-
+""
+0
+-0
+null
+NaN
+false
+undefined
+On
 
 ///////////////////////////Undefined ////////////////////////////////
 
+// let def;
+// console.log(def);
 
 ///////////////////////////Null//////////////////////////////////////
 
+let mel = null;
+console.log(mel);
