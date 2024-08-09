@@ -40,6 +40,10 @@ console.log(isRenee);
 console.log(isScottie)
 
 // Write three JavaScript statement which provide truthy value.
+let Skyla = "Sister";
+let Spenser = "Brother";
+let Shawnice = "Cousin";
+let Kenneth = "Step-Brother";
 
 const lightOn = true;
 const mySiblings = [Skyla, Spenser, Kenneth, Shawnice];
@@ -89,20 +93,53 @@ console.log(4 === '4');
 
 // Find the length of python and jargon and make a falsy comparison statement.
 
+const py = "python";
+const jar = "jargon";
+
+console.log(`${py.length}`);
+console.log(`${jar.length}`);
+
+
 // Figure out the result of the following expressions first without using console.log(). After you decide the result confirm it by using console.log()
 
 // 4 > 3 && 10 < 12 True
+
+console.log(4 > 3 && 10 < 12);
+
 // 4 > 3 && 10 > 12 false
+
+console.log(4 > 3 && 10 > 12);
+
 // 4 > 3 || 10 < 12 true
+
+console.log(4 > 3 || 10 < 12);
+
 // 4 > 3 || 10 > 12 true
+
+console.log(4 > 3 || 10 > 12);
+
 // !(4 > 3) false
+
+console.log(!(4 > 3));
+
 // !(4 < 3) true
+
+console.log(!(4 < 3));
+
 // !(false) true
-// !(4 > 3 && 10 < 12) true
-// !(4 > 3 && 10 > 12) false
+
+console.log(!(false));
+
+// !(4 > 3 && 10 < 12) false
+
+console.log(!(4 > 3 && 10 < 12));
+
+// !(4 > 3 && 10 > 12) true
+console.log(!(4 > 3 && 10 > 12));
+
 // !(4 === '4') true
 
-
+console.log(!(4 === '4'));
 
 // There is no 'on' in both dragon and python
 
@@ -116,9 +153,12 @@ let currentDate = new Date();
 // Access the Year within the Date and assign it to currentYear.
 let currentYear = currentDate.getFullYear();
 
-//Access the Month within the Date and add 1 since it starts at 0, assign it to currentMonth.
+//Access and assign different attributes of Date() to variables to call later.
 let currentMonth = currentDate.getMonth() + 1;
-
+let todaysDate = currentDate.getDate();
+let currentDay = currentDate.getDay() + 1;
+let currentHour = currentDate.getHours();
+let currentMinute = currentDate.getMinutes();
 // What is the year today?
 
 console.log(currentYear);
@@ -129,9 +169,24 @@ console.log(currentMonth);
 
 // What is the date today?
 
-console.log(Date());
+console.log(todaysDate);
 
 // What is the day today as a number?
+
+console.log(currentDay);
+
 // What is the hours now?
+
+console.log(currentHour);
+
 // What is the minutes now?
+
+console.log(currentMinute);
+
 // Find out the numbers of seconds elapsed from January 1, 1970 to now.
+
+// Declare a new variable with new Date.
+const epochTime = new Date();
+
+// Call variable and print elapsed time from Epoch to the console. 
+console.log(epochTime.getTime() / 1000);
