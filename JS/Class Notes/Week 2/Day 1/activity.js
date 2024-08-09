@@ -23,7 +23,7 @@ console.log(typeof parseInt(num) == typeof num1);
 let num2 = parseFloat('9.8');
 let num3 = 10;
 
-console.log(typeof num2 == typeof num3);
+console.log(typeof Math.round(num2) == typeof num3);
 
 
 // Check if 'on' is found in both python and jargon
@@ -52,7 +52,7 @@ const getRandomNumber = (min, max) => {
 
 const randomNumber2 = getRandomNumber(0, 100)
 
-console.log(randomNumber2)
+console.log(Math.round(randomNumber2));
 
 
 // Generate a random number between 50 and 100 inclusively.
@@ -63,7 +63,7 @@ const getRandomNumber2 = (min, max) => {
 
 const randomNumber3 = getRandomNumber2(50, 100)
 
-console.log(randomNumber3)
+console.log(Math.round(randomNumber3));
 
 
 // Generate a random number between 0 and 255 inclusively.
@@ -74,14 +74,14 @@ const getRandomNumber3 = (min, max) => {
 
 const randomNumber4 = getRandomNumber3(0, 255)
 
-console.log(randomNumber4)
+console.log(Math.round(randomNumber4));
 
 
 // Access the 'JavaScript' string characters using a random number.
 
-let string = 'JavaScript'
-let fourthLetter = string[3]
-console.log(fourthLetter);
+const string = 'JavaScript'
+
+console.log(string[Math.floor(Math.random() * string.length)]);
 
 
 //Use console.log() and escape characters to print the following pattern.

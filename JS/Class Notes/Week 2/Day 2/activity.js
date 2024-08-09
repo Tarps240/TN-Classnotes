@@ -22,7 +22,7 @@ const num = '10';
 const num1 = 10;
 
 
-console.log(typeof num == num1);
+console.log(typeof num == typeof num1);
 
 // Check if parseInt('9.8') is equal to 10
 
@@ -33,15 +33,23 @@ console.log(typeof(num2) === typeof(num3));
 
 // Boolean value is either true or false.
 
+let isRenee = false;
+let isScottie = true;
 
+console.log(isRenee);
+console.log(isScottie)
 
 // Write three JavaScript statement which provide truthy value.
 
-
+const lightOn = true;
+const mySiblings = [Skyla, Spenser, Kenneth, Shawnice];
+const inClass = 1;
 
 // Write three JavaScript statement which provide falsy value.
 
-
+let myKeys;
+let herWeight = null;
+let ourSong = undefined;
 
 // Figure out the result of the following comparison expression first without using console.log(). After you decide the result confirm it using console.log()
 
@@ -83,16 +91,16 @@ console.log(4 === '4');
 
 // Figure out the result of the following expressions first without using console.log(). After you decide the result confirm it by using console.log()
 
-// 4 > 3 && 10 < 12
-// 4 > 3 && 10 > 12
-// 4 > 3 || 10 < 12
-// 4 > 3 || 10 > 12
-// !(4 > 3)
-// !(4 < 3)
-// !(false)
-// !(4 > 3 && 10 < 12)
-// !(4 > 3 && 10 > 12)
-// !(4 === '4')
+// 4 > 3 && 10 < 12 True
+// 4 > 3 && 10 > 12 false
+// 4 > 3 || 10 < 12 true
+// 4 > 3 || 10 > 12 true
+// !(4 > 3) false
+// !(4 < 3) true
+// !(false) true
+// !(4 > 3 && 10 < 12) true
+// !(4 > 3 && 10 > 12) false
+// !(4 === '4') true
 
 
 
