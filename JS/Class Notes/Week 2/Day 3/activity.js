@@ -4,7 +4,7 @@
 /////// Enter your age:15
 /////// You are left with 3 years to drive.
 
-
+//Done in index.html
 
 
 
@@ -12,7 +12,7 @@
 /////// Enter your age: 30
 /////// You are 5 years older than me.
 
-
+//Done in index2.html
 
 
 // If a is greater than b return 'a is greater than b' else 'a is less than b'. Try to implement it in to ways
@@ -22,7 +22,11 @@
 //   let b = 3
 //   4 is greater than 3
 
+let isRaining = true;
 
+isRaining
+    ?console.log("Put on a jacket")
+    :console.log("You dont need a raincoat")
 
 // Even numbers are divisible by 2 and the remainder is zero. How do you check, if a number is even or not using JavaScript?
 /////// Enter a number: 2
