@@ -22,11 +22,23 @@
 //   let b = 3
 //   4 is greater than 3
 
-let isRaining = true;
+let a = 0;
+let b = 1
 
-isRaining
-    ?console.log("Put on a jacket")
-    :console.log("You dont need a raincoat")
+if(a > b) {
+    console.log("a is greater than b.");
+} else if(a == b) {
+    console.log("a is equal to b.");
+} else {
+    console.log("a is less than b");
+}
+
+const tString =
+    a > b
+        ?"a is greater than b"
+        :"a is less than b"
+
+    console.log(tString);
 
 // Even numbers are divisible by 2 and the remainder is zero. How do you check, if a number is even or not using JavaScript?
 /////// Enter a number: 2
@@ -34,7 +46,7 @@ isRaining
 /////// Enter a number: 9
 /////// 9 is is an odd number.
 
-
+//Done in index 3.
 
 
 // Write a code which can give grades to students according to theirs scores:
@@ -44,7 +56,7 @@ isRaining
 // 50-59, D
 // 0-49, F
 
-
+//Done in index 4
 
 // Check if the season is Autumn, Winter, Spring or Summer. If the user input is :
 // September, October or November, the season is Autumn.
@@ -52,18 +64,15 @@ isRaining
 // March, April or May, the season is Spring
 // June, July or August, the season is Summer
 
-
+//Done in index 5
 
 // Check if a day is weekend day or a working day. Your script will take day as an input.
 //     What is the day  today? Saturday
 //     Saturday is a weekend.
-
-//     What is the day today? saturDaY
+//     What is the day today? saturday
 //     Saturday is a weekend.
-
 //     What is the day today? Friday
 //     Friday is a working day.
-
 //     What is the day today? FrIDAy
 //     Friday is a working day.
 
