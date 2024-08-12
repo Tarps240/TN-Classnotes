@@ -13,7 +13,7 @@ let difference = userAge - age;
 // if else statements
 
 if(age > 18) {
-    console.log("You are old enough to drive.");
+    window.alert("You are old enough to drive.");
 } else {
-    console.log("You have " + difference +  " years until you can drive.");
+    window.alert("You have " + difference +  " years until you can drive.");
 }

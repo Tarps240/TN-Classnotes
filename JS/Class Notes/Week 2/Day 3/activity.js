@@ -73,10 +73,10 @@ const tString =
 //     Saturday is a weekend.
 //     What is the day today? Friday
 //     Friday is a working day.
-//     What is the day today? FrIDAy
+//     What is the day today? Friday
 //     Friday is a working day.
 
-
+//done in index 6.
 
 
 // Write a program which tells the number of days in a month.
@@ -89,5 +89,7 @@ const tString =
 //   Enter a month: February
 //   February has 28 days.
 
-//   Enter a month: FEbruary
+//   Enter a month: February
 //   February has 28 days.
+
+//Done in index 7.

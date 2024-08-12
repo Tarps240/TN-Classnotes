@@ -7,7 +7,7 @@ let yourAge = prompt("Enter your age:");
 let difference = yourAge - myAge;
 
 if(yourAge > myAge) {
-    console.log("You are " + difference + " years older than me.");
+    window.alert(`You are ${difference} years older than me.`);
 } else{
-    console.log("I'm older than you!");
+    window.alert("I'm older than you!");
 }
