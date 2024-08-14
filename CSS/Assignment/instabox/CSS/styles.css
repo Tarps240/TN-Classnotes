@@ -17,8 +17,8 @@ li {
 .profile-pics {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-top: 50px;
+    justify-content: space-evenly;
+    padding-top: 30px;
 }
 
 .logo {
@@ -37,10 +37,6 @@ li {
 
 #username {
     font-size: 1.5em;
-}
-
-section {
-    display: flex;
 }
 
 .checkmark {
