@@ -55,27 +55,41 @@ console.log(typesLength);
 
 // Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
 
+let itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"];
 
 // Print the array using console.log()
 
+console.log(itCompanies);
 
 // Print the number of companies in the array
 
+let companyLength = itCompanies.length;
+console.log(companyLength);
 
 // Print the first company, middle and last company
 
+console.log(itCompanies[0]);
+console.log(itCompanies[3]);
+console.log(itCompanies[6]);
 
 // Print out each company
 
+console.log(itCompanies);
 
 // Change each company name to uppercase one by one and print them out
 
+itCompanies = itCompanies.map(function (e) { 
+  return e.toUpperCase()
+});
 
 // Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
 
 
+
 // Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
 
+console.log(itCompanies.includes("TikTock"));
+console.log(itCompanies.includes("Google"));
 
 // Filter out companies which have more than one 'o' without the filter method
 
