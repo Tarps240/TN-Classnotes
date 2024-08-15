@@ -25,17 +25,33 @@ const countries = [
 
 // Declare an empty array;
 
+let arr = [];
+
 // Declare an array with more than 5 number of elements
 
+let recipies = ["Coq au Vin", "Steak au Poivre", "Nasi Goreng", "Bechamel", "Mournay", "Gratin Dauphinoise", "Chicken Provencal"];
 
 // Find the length of your array
 
+let findLength = recipies.length;
+console.log(findLength);
 
 // Get the first item, the middle item and the last item of the array
 
+//access array.
+let items = recipies;
+
+//Get items from array.
+console.log(items[0]);
+console.log(items[3]);
+console.log(items[6]);
 
 // Declare an array called mixedDataTypes, put different data types in the array and find the length of the array. The array size should be greater than 5
 
+let mixedDataTypes = [NaN, true, 7, "Scott", "Renee", false, 10, "Apple", "Phone", undefined, null];
+
+let typesLength = mixedDataTypes.length;
+console.log(typesLength);
 
 // Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
 
