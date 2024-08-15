@@ -25,18 +25,23 @@
 
 // array of web technologies
 
+let webTech = ["JavaScript", "MySQL", "PHP", "React", "Bootstrap", "CSS", "Ruby", "Node", "Angular", "Java", "HTML5"];
 
 // /////////////////////////////////////////////////////////////////////////////////////////////
 // Creating an array using split
-let js = "JavaScript";
-let splitJS = js.split("");
-console.log(splitJS);
+
+// let js = "JavaScript";
+// let splitJS = js.split("");
+// console.log(splitJS);
+
 //.........................................To Do..............................................
 //For the two strings use a split method to conosole.log and see the list of arrays
-I love teaching and empowering people.
-I teach HTML, CSS, JS, React, Python.
 
 
+
+let str = "I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.";
+let splitStr = str.split(" ");
+console.log(splitStr);
 
 
 // /////////////////////////////////////////////////////////////////////////////////////////////
@@ -45,12 +50,12 @@ I teach HTML, CSS, JS, React, Python.
 // const fruits = ['banana', 'orange', 'mango', 'lemon']
 //index of Fruit//////0/////////1////////2////////3////
 
+let teams = ["Capitals", "Predators", "Red Wings", "Devils", "Avalanche"];``
 
-
-
+console.log(teams[0]);
 
 //.........................................To Do..............................................
-//console how many are in  my shoping bag, just accsess and pring potato, Milk and sugar. Replace Avocado with Onion
+//console how many are in  my shoping bag, just accsess and print potato, Milk and sugar. Replace Avocado with Onion
 const shoppingCart = [
     'Milk',
     'Mango',
@@ -63,6 +68,21 @@ const shoppingCart = [
   ] // List of food products
 
 
+//Get length of array.
+let listLength = shoppingCart.length;
+console.log(listLength);
+
+//Access and Print Potato, Milk, Sugar.
+let noStock = shoppingCart;
+console.log(noStock[3]);
+console.log(noStock[0]);
+console.log(noStock[7]);
+
+//Change Avocado to Onion
+let index = 4;
+let replacement = "Onion";
+shoppingCart[index] = replacement;
+console.log(shoppingCart);
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////
@@ -82,7 +102,10 @@ const numbers = [1, 2, 3, 4, 5]
 
 //Getting index an element in arr array (To check if an item exist in an array.)
 
-
-
+console.log(teams.includes("Flyers"));
 
 //Getting index an element in arr array (To check if an item exist in an array.)
+
+console.log(teams.includes("Predators"));
+
+//Array of arrays
