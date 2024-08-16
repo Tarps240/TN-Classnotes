@@ -96,16 +96,70 @@ const numbers = [1, 2, 3, 4, 5]
 //////////////////////////////////////////////////////////////////////////////////////////////
 // Methods to manipulate array
 
+let firstList = [1, 2, 3, 4];
+let secondList = [5, 6, 7, 8];
+let combined = firstList.concat(secondList);
 
+console.log(combined);
 
+console.log(firstList.indexOf(3));
+console.log(combined.indexOf(6));
+console.log(Array.isArray(firstList));
 
+//Convert array to string.
+
+console.log(typeof firstList.toString());
+console.log(teams.toString());
+
+//Join arrays
+// console.log(firstList.join("! "));
+// console.log(shoppingCart.join(" "));
+// console.log(secondList.join("joined"));
+// console.log(teams.join(7));
+// console.log(firstList.join(teams));
+
+//Slice arrays
+// console.log(teams.slice(1));
+// console.log(teams.slice(2, 5));
+
+//splice arrays
+// shoppingCart.splice(3 , 0, "Bread", "Beer");
+// console.log(shoppingCart);
+
+//Push to the end of array
+teams.push("Tampa", "Dallas");
+console.log(teams);
+
+//Pop array method remove item from end of array
+
+shoppingCart.pop();
+console.log(shoppingCart);
+
+//Shift method remove first item from array
+
+//teams.shift();
+console.log(teams);
+
+//Unshift adds an element to the start of the array
+
+teams.unshift("Orlando");
+console.log(teams);
 
 //Getting index an element in arr array (To check if an item exist in an array.)
 
-console.log(teams.includes("Flyers"));
+//console.log(teams.includes("Flyers"));
 
 //Getting index an element in arr array (To check if an item exist in an array.)
 
-console.log(teams.includes("Predators"));
+//console.log(teams.includes("Predators"));
 
 //Array of arrays
+
+// let Score = [
+//   ["Renee", 20, 60, "A"],
+//   ["Scott", 10, 52, "B"],
+//   ["Lisa", 5, 24, "F"],
+//   ["Pandora", 28, 43, "A"],
+//   ["Persephone", 16, 51, "B"]
+// ];
+// console.log(Score);
