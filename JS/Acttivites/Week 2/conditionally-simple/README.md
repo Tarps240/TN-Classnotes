@@ -12,7 +12,6 @@ Today you'll be branching to return different results based on the parameters pa
 * Comparison operators (`===`, `>`, etc.).
 * `if` and `if-else`.
 
-
 ### Workflow
 
 * Copy and create a new repo.
