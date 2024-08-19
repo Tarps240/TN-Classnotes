@@ -33,8 +33,8 @@ let recipies = ["Coq au Vin", "Steak au Poivre", "Nasi Goreng", "Bechamel", "Mou
 
 // Find the length of your array
 
-let findLength = recipies.length;
-console.log(findLength);
+// let findLength = recipies.length;
+// console.log(findLength);
 
 // Get the first item, the middle item and the last item of the array
 
@@ -42,16 +42,17 @@ console.log(findLength);
 let items = recipies;
 
 //Get items from array.
-console.log(items[0]);
-console.log(items[3]);
-console.log(items[6]);
+
+// console.log(items[0]);
+// console.log(items[3]);
+// console.log(items[6]);
 
 // Declare an array called mixedDataTypes, put different data types in the array and find the length of the array. The array size should be greater than 5
 
 let mixedDataTypes = [NaN, true, 7, "Scott", "Renee", false, 10, "Apple", "Phone", undefined, null];
 
-let typesLength = mixedDataTypes.length;
-console.log(typesLength);
+// let typesLength = mixedDataTypes.length;
+// console.log(typesLength);
 
 // Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
 
@@ -109,18 +110,18 @@ let itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", 
 
 // Slice out the first 3 companies from the array
 
-const result = itCompanies.slice(0, 3);
-console.log(result);
+// const result = itCompanies.slice(0, 3);
+// console.log(result);
 
 // Slice out the last 3 companies from the array
 
-const result1 = itCompanies.slice(4, 7);
-console.log(result1);
+// const result1 = itCompanies.slice(4, 7);
+// console.log(result1);
 
 // Slice out the middle IT company or companies from the array
 
-const middle = itCompanies.slice(3, 4);
-console.log(middle);
+// const middle = itCompanies.slice(3, 4);
+// console.log(middle);
 
 // Remove the first IT company from the array
 
@@ -131,18 +132,18 @@ console.log(middle);
 
 const x = itCompanies.splice(3, 1);
 
-console.log(`Array values after removing middle object: ${itCompanies}`);
-console.log(`Middle company in array: ${x}`);
+// console.log(`Array values after removing middle object: ${itCompanies}`);
+// console.log(`Middle company in array: ${x}`);
 
 // Remove the last IT company from the array
 
-const last = itCompanies.pop();
-console.log(last);
+// const last = itCompanies.pop();
+// console.log(last);
 
 // Remove all IT companies
 
-itCompanies = [];
-console.log(itCompanies);
+// itCompanies = [];
+// console.log(itCompanies);
 
 // The following is an array of 10 students ages:
 const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
@@ -183,7 +184,15 @@ console.log(median(ages));
 
 // Find the average age(all items divided by number of items)
 
+function getAverage(ages) {
+  let sum = 0;
+  for (let i = 0; i < ages.length; i++) {
+    sum += ages[i];
+  }
+  return sum / ages.length;
+}
 
+console.log(getAverage(ages))
 
 // Find the range of the ages(max minus min)
 

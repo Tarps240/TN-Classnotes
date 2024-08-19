@@ -155,11 +155,11 @@ console.log(teams);
 
 //Array of arrays
 
-// let Score = [
-//   ["Renee", 20, 60, "A"],
-//   ["Scott", 10, 52, "B"],
-//   ["Lisa", 5, 24, "F"],
-//   ["Pandora", 28, 43, "A"],
-//   ["Persephone", 16, 51, "B"]
-// ];
-// console.log(Score);
+let Score = [
+  ["Renee", 20, 60, "A"],
+  ["Scott", 10, 52, "B"],
+  ["Lisa", 5, 24, "F"],
+  ["Pandora", 28, 43, "A"],
+  ["Persephone", 16, 51, "B"]
+];
+console.log(Score);
