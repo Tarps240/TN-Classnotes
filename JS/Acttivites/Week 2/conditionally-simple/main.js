@@ -2,7 +2,11 @@
  * YOUR CODE GOES RIGHT HERE! *
  ******************************/
 
+let longStr = "That's a long string!";
 
+function isItLong(longStr > 20) {
+  return console.log("That's a long string!");
+};
 
 
 /**********************************

@@ -4,7 +4,15 @@ Your code goes below.
 
 */
 
+const x = 3;
+const y = 10;
+const z = 5;
+const name = "Scott";
+const greeting = `'HEY'`;
 
+function multiply() {
+  
+}
 
 
 
