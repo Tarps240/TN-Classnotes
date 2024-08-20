@@ -35,18 +35,44 @@ const teamLimit = 10;
 // Start off with 0 people on the team.
 let team = 0;
 
-// Initiate while loop to run until fish reaches population limit
+// Initiate while loop to run until the team is full.
 while (team < teamLimit) {
 	// add one teammate for each iteration
 	team++;
 	console.log(team);
 }
 
+//Do while loop iterate 0 - 10.
+let result = '';
+let i = 0;
+
+do {
+  i = i + 1;
+  result = result + i;
+} while (i < 10);
+
+console.log(result);
 
 //   Iterate 10 to 0 using for loop, do the same using while and do while loop
   
+// For loop iteration 10 - 0.
+for (let i = 10; i >= 0; i--) {
+  console.log(i);
+}
 
+//While loop 10 - 0.
+// Set team members to 10.
+const teamLimit = 10;
 
+// Start off with 0 people on the team.
+let team = 0;
+
+// Initiate while loop to run until the team is full.
+while (team < teamLimit) {
+	// add one teammate for each iteration
+	team++;
+	console.log(team);
+}
 
 //   Iterate 0 to n using for loop
   

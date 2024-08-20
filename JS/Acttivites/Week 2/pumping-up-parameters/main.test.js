@@ -29,8 +29,14 @@ function opposite(e) {
 
  console.log(opposite(43));
 
+ function makeFullName() {
 
- 
+ }
+
+ function yellAt() {
+  
+ }
+
 /*********************************************************************************************************************
 
  * CODE BELOW HERE IS FOR INTERNAL USE ONLY! IT ENSURES THAT THE TESTING *
