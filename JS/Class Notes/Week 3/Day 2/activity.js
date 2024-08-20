@@ -25,6 +25,22 @@ const countries = [
 //   const mernStack = ['MongoDB', 'Express', 'React', 'Node']
 //   Iterate 0 to 10 using for loop, do the same using while and do while loop
   
+for (let i = 0; i <= 10; i++) {
+  console.log(i);
+}
+
+// Set team members to 10.
+const teamLimit = 10;
+
+// Start off with 0 people on the team.
+let team = 0;
+
+// Initiate while loop to run until fish reaches population limit
+while (team < teamLimit) {
+	// add one teammate for each iteration
+	team++;
+	console.log(team);
+}
 
 
 //   Iterate 10 to 0 using for loop, do the same using while and do while loop
