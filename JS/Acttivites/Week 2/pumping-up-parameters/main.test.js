@@ -4,10 +4,33 @@ Your code goes below.
 
 */
 
+let x = 3;
+let z = 5;
+let y = 10;
+let name = "Scott";
+let greeting = `'HEY'`;
+
+function multiply(n) {
+  return x * n;
+}
+
+console.log(multiply(9));
+
+function modYby(m) {
+ return y %= m;
+}
+
+console.log(modYby(12));
+console.log(y);
+
+function opposite(e) {
+  return z = -e;
+}
+
+ console.log(opposite(43));
 
 
-
-
+ 
 /*********************************************************************************************************************
 
  * CODE BELOW HERE IS FOR INTERNAL USE ONLY! IT ENSURES THAT THE TESTING *
