@@ -13,10 +13,10 @@
     position: fixed;
 }
 
-.title-text {
+.flag-text {
     position: relative;
     top: -20px;
-    padding-left: 60px;
+    padding-left: 50px;
 }
 
 header {
@@ -52,13 +52,16 @@ nav a {
 }
 
 nav a:hover {
-    color: turquoise;
+    color: white;
 }
 
 /* Hero Image styling */
 
-div #top-banner {
-    background-image: url("../Images/Banner-1.jpeg");
+.hero-image {
+    display: flex;
+    background: red;
+    height: 200px;
+    width: 100%;
 }
 
 /* Main content styling  */
