@@ -4,7 +4,7 @@
 
 let longStr = "That's a long string!";
 
-function isItLong(longStr > 20) {
+function isItLong(longStr.length > 20) {
   return console.log("That's a long string!");
 };
 
