@@ -14,6 +14,12 @@ li {
     justify-content: space-evenly;
 }
 
+.status-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 .profile-pics {
     display: flex;
     flex-direction: row;
@@ -35,8 +41,11 @@ li {
     top: 5px;
 }
 
-#username {
-    font-size: 1.5em;
+.username {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    font-weight: bold;
 }
 
 .checkmark {
