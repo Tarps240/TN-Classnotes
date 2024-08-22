@@ -4,17 +4,38 @@ Your code goes below.
 
 */
 
-const x = 3;
-const y = 10;
-const z = 5;
-const name = "Scott";
-const greeting = `'HEY'`;
+let x = 3;
+let z = 5;
+let y = 10;
+let name = "Scott";
+let greeting = `'HEY'`;
 
-function multiply() {
-  
+function multiply(n) {
+  return x * n;
 }
 
+console.log(multiply(9));
 
+function modYby(m) {
+ return y %= m;
+}
+
+console.log(modYby(12));
+console.log(y);
+
+function opposite(e) {
+  return z = -e;
+}
+
+ console.log(opposite(43));
+
+ function makeFullName() {
+
+ }
+
+ function yellAt() {
+  
+ }
 
 /*********************************************************************************************************************
 

@@ -196,3 +196,5 @@ console.log(getAverage(ages))
 
 // Find the range of the ages(max minus min)
 
+let averageAges = maximumValue - minimumValue;
+console.log("There is a " + averageAges + " year spread.");

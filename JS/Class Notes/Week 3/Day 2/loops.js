@@ -16,6 +16,7 @@ for (let y = 5; y >= 0; y--){
 for (let i = 0; i <= 5; i++){
     console.log(i + i);
 }
+
 let countries = ["Japan", "United States", "Singapore", "Austrailia", "Hong Kong", "Thailand"]
 let capCountries = []
 
