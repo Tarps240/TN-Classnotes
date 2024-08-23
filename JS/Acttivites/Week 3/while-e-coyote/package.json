@@ -1,0 +1,13 @@
+{
+  "name": "while-the-long-face",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -w main.test.js"
+  },
+  "homepage": "https://github.com/ci-wdi-900/while-the-long-face#readme",
+  "dependencies": {
+    "mocha":"^10.2.0"
+  }
+}
