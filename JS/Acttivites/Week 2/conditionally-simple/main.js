@@ -7,8 +7,18 @@ let longStr = "That's a long string!";
 function isItLong() {
   if (longStr.length > 20) {
     return "That's a long string!";
-  }
+  } else if (longStr.length <= 20); {
+    return `undefined`;
+  } 
 };
+
+let mediumStr = "That's a regular sized string!"
+
+function isItMedium() {
+  if (mediumStr > 10 && mediumStr < 20) {
+    return "That's a regular sized string!"
+  } 
+}
 
 
 /**********************************

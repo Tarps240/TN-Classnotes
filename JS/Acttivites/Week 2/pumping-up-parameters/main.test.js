@@ -3,6 +3,7 @@
 Your code goes below.
 
 */
+// Declare variables.
 
 let x = 3;
 let z = 5;
@@ -10,11 +11,15 @@ let y = 10;
 let name = "Scott";
 let greeting = `'HEY'`;
 
-function multiply(n) {
-  return x * n;
+// Multiply function.
+
+function multiply(x) {
+   return x * n;
 }
 
-console.log(multiply(9));
+console.log();
+
+// Mod Y By function.
 
 function modYby(m) {
  return y %= m;
@@ -23,19 +28,26 @@ function modYby(m) {
 console.log(modYby(12));
 console.log(y);
 
+// Opposite function.
+
 function opposite(e) {
   return z = -e;
 }
 
  console.log(opposite(43));
 
- function makeFullName() {
+// Full name function.
 
+ function makeFullName(name) {
+    console.log(`${name} ` + `Lewis`);
  }
 
- function yellAt() {
-  
- }
+// Yell function.
+
+function yellAt(greeting, name){
+  return greeting + " " + name;
+  }
+  console.log(yellAt("Hello!", "Mr. E."))
 
 /*********************************************************************************************************************
 
