@@ -1,50 +1,115 @@
-/* Start CSS */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8e8f4;
+    color: #2c3e50;
+}
 
-.wrapper {
-    display: flex;
-    flex-flow: row wrap;
-    font-weight: bold;
+header {
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
     text-align: center;
 }
 
-.wrapper > * {
-    padding: 10px;
-    flex: 1 100%;
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
-.header {
-    background: red;
+header h1 {
+    margin: 0;
+    font-size: 2em;
 }
 
-.footer {
-    background: green;
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 
-.main {
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.subtitle {
+    background-color: #9bafcc;
+    padding: 10px 0;
+}
+
+.subtitle h2 {
+    margin: 0;
+    color: #34495e;
+}
+
+.about-me {
+    padding: 40px 20px;
+    background-color: #f0f0f8;
     text-align: left;
-    background: deepskyblue;
 }
 
-.aside-1 {
-    background: gold;
+.about-me h2 {
+    margin: 0 0 20px;
+    font-size: 1.5em;
+    text-align: left;
 }
 
-.aside-2 {
-    background: hotpink;
+.work {
+    padding: 40px 20px;
+    background-color: #d0e4f7;
+    text-align: left;
 }
 
-@media all and (min-width: 600px) {
-    .aside {flex: 1 0 0;}
+.work h2 {
+    margin: 0 0 20px;
+    font-size: 1.5em;
+    text-align: left;
 }
 
-@media all and (min-width: 800px) {
-    .main {flex: 3 0px;}
-    .aside-1 {order: 1;}
-    .main {order: 2;}
-    .aside-2 {order: 3;}
-    .footer {order: 4;}
+.work-item {
+    background-color: #9bafcc;
+    margin-bottom: 20px;
+    padding: 20px;
+    color: white;
 }
 
-body {
-    padding: 2em;
+.work-item h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
 }
+
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer h2 {
+    margin: 0 0 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+

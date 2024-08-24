@@ -30,10 +30,26 @@ function isItShort(shortStr) {
 // Function to calculate string length.
 
 function howLongIsMyString(inputString) {
-  return inputString.length;
+  if (inputString.length > 20) {
+    return "That's a long string!";
+  } else if (inputString.length >= 10 && inputString.length <= 20) {
+    return "That's a regular sized string!";
+  } else if (inputString.length < 10) {
+    return "That's a small string!";
+  }
 }
 
 // Function to calculate persons height.
+
+function personsHeight(name) {
+  if (name === 'Shaq') {
+    return 85;
+} else if (name === 'Zooey') {
+  return 65;
+} else {
+  return "I don't know everyone's height!";
+}
+}
 
 /**********************************
  *      OUR CODE GOES BELOW.      *
