@@ -9,24 +9,23 @@ let x = 3;
 let z = 5;
 let y = 10;
 let name = "Scott";
-let greeting = `'HEY'`;
+let greeting = `HEY`;
 
 // Multiply function.
 
-function multiply(x) {
-   return x * n;
+function multiply(factor) {
+  x *= factor;
 }
-
-console.log();
 
 // Mod Y By function.
 
-function modYby(m) {
- return y %= m;
+function modYBy(remainder) {
+  if (remainder !== 0) { 
+      y %= remainder; 
+  } else {
+      console.error("Division by zero is not allowed.");
+  }
 }
-
-console.log(modYby(12));
-console.log(y);
 
 // Opposite function.
 
@@ -38,16 +37,15 @@ function opposite(e) {
 
 // Full name function.
 
- function makeFullName(name) {
-    console.log(`${name} ` + `Lewis`);
- }
+function makeFullName(lastName) {
+  name += " " + lastName;
+}
 
 // Yell function.
 
-function yellAt(greeting, name){
-  return greeting + " " + name;
-  }
-  console.log(yellAt("Hello!", "Mr. E."))
+function yellAt(appText) {
+  greeting += "," + " " + appText + "!"; 
+}
 
 /*********************************************************************************************************************
 

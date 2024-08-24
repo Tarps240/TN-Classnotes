@@ -1,25 +1,39 @@
 /******************************
  * YOUR CODE GOES RIGHT HERE! *
  ******************************/
-
-let longStr = "That's a long string!";
-
-function isItLong() {
-  if (longStr.length > 20) {
-    return "That's a long string!";
-  } else if (longStr.length <= 20); {
-    return `undefined`;
-  } 
-};
-
-let mediumStr = "That's a regular sized string!"
-
-function isItMedium() {
-  if (mediumStr > 10 && mediumStr < 20) {
-    return "That's a regular sized string!"
-  } 
+// Long string function.
+function isItLong(inputStr) {
+  if (inputStr.length > 20) {
+    return "That's a long string!"
+  }
 }
 
+// Medium string function.
+
+function isItMedium(medStr) {
+  if (medStr.length >= 10 && medStr.length <= 20) {
+      return "That's a regular sized string!";
+  }
+  // Don't return anything if the condition isn't met.
+}
+
+// Short string function.
+
+function isItShort(shortStr) {
+  if (shortStr.length < 10) {
+    return "That's a small string!"
+  } else {
+    return "That's not a small string!";
+  }
+}
+
+// Function to calculate string length.
+
+function howLongIsMyString(inputString) {
+  return inputString.length;
+}
+
+// Function to calculate persons height.
 
 /**********************************
  *      OUR CODE GOES BELOW.      *
