@@ -133,7 +133,11 @@ for(let i = 0; i <= 10; i++){
 //    9    81    729
 //    10   100   1000
 
+console.log("i\t i^2\t i^3");
 
+for (let i = 0; i <= 10; i++) {
+    console.log(`${i}\t ${i * i}\t ${i * i * i}`);
+}
 
 
 //   Use for loop to iterate from 0 to 100 and print only even numbers
@@ -228,8 +232,23 @@ console.log(randomArr);
 
 //   Develop a small script which generate array of 5 random numbers and the numbers must be unique
   
+function uniqueRandomNumbers() {
+  let numbers = [];
 
+  while (numbers.length < 5) {
+    let randomNumber = Math.floor(Math.random() * 10000) + 1;
 
+    if (!numbers.includes(randomNumber)) {
+      numbers.push(randomNumber);
+    }
+  }
+
+    return numbers;
+
+}
+
+let randomArray = uniqueRandomNumbers();
+console.log(randomArray);
 
 //   Develop a small script which generate a six characters random id:
 //   ie: 5j2khz

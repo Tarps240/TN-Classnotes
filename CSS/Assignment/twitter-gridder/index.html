@@ -8,28 +8,31 @@
     <title>Twitter Gridder Assignment</title>
 </head>
 
-<header class="tweet-head">
-    <div class="start-tweet" id="top">
-        <img src="./assets/arrow.png" alt="Back Arrow">
-        <h3>SpaceX</h3>
-        <img src="./assets/verified.png" alt="Twitter Verified Checkmark">
-        <p>5,142 Tweets</p>
+
+
+<body class = "tweet-wrapper">
+    <header class="tweet-head">
+        <div class="start-tweet" id="top">
+            <img src="./assets/arrow.png" alt="Back Arrow" class = "back-arrow">
+            <h3>SpaceX</h3>
+            <img src="./assets/verified.png" alt="Twitter Verified Checkmark" class = "twitter-check">
+            <p class = "tweet-number">5,142 Tweets</p>
+        </div>
         <div class="banner-img">
             <img src="./assets/header.png" alt="SpaceX header Image">
         </div>
+    </header>
+    <div>
+        <nav class = "nav-links">
+            <ul>
+                <li><a href="tweets.html"><b><u>Tweets</u></b></a></li>
+                <li><a href="main.html">Tweets & Replies</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="likes.html">Likes</a></li>
+            </ul>
+        </nav>
     </div>
-</header>
-
-<body>
-    <nav>
-        <ul>
-            <li><a href="tweets.html"><b><u>Tweets</u></b></a></li>
-            <li><a href="main.html">Tweets & Replies</a></li>
-            <li><a href="media.html">Media</a></li>
-            <li><a href="likes.html">Likes</a></li>
-        </ul>
-    </nav>
-    <div class="main-tweet">
+    <div class = "main-tweet">
         <img src="./assets/tweet.png">
     </div>
 </body>

@@ -7,12 +7,16 @@
 
 // Function Declaration
 
+function sayHello() {
 
+}
 
 
 // Function without a parameter and return
 
-
+function parameterlessFunction() {
+        return;
+}
 
 
 // Function returning value
