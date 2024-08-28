@@ -21,9 +21,9 @@ header {
 }
 
 .cover-photo {
-    height: 100px;
+    height: 150px;
     background-color: #1da1f2;
-    background-image: url('https://via.placeholder.com/400x100');
+    background-image: url('../assets/header.png');
     background-size: cover;
     background-position: center;
     grid-row: 1;
