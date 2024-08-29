@@ -1,86 +1,101 @@
 /******************
  * YOUR CODE HERE *
  ******************/
-const addAll = function(arr){
-  let sum = 0
-  for(let num of arr){
-    sum += num
+function sumArray(numbers) {
+  let sum = 0; // Initialize sum variable to 0
+  for (const number of numbers) { // Loop through each number in the array
+      sum += number; // Add each number to the sum
   }
-  return sum
-}
-const countSpaces = function (str){
-  let count = 0
-  for(let char of str){
-    if(char === ' '){
-      count++
-    }
-  }
-  return count
+  return sum; // Return the final sum
 }
 
-const countTrues = function(booleans){
-  let count = 0
-  for(let bool of booleans){
-    if(bool === true){
-      count++
-    }
-  }
-  return count
-}
+// Example usage:
+const numbersArray = [1, 2, 3, 4, 5];
+const totalSum = sumArray(numbersArray);
+console.log(totalSum); // Output will be 15
 
-const makeFriendly = function(paragraph){
-  let result = ''
-  for (let char of paragraph){
-    if(char === '.'){
-      result += '!'
-    }else{
-      result += char
-    }
-  }
-  return result
-}
 
-const cubeAll = function(arr){
-  let result = []
-  for (let num of arr){
-    result.push(num ** 3)
-  }
-  return result
-}
+// const addAll = function(arr){
+//   let sum = 0
+//   for(let num of arr){
+//     sum += num
+//   }
+//   return sum
+// }
 
-const addNoises = function(arr){
-  let result = []
-  for(animal of arr){
-    if (animal === 'Fido' || animal === 'Rolph' || animal === 'Maisie') {
-      result.push(animal + ' says "Woof!"')
-    } else if (animal === 'Garfield' || animal === 'Heathcliff') {
-      result.push(animal + ' says "Meow!"')
-    } else if (animal === 'Barnie' || animal === 'Sharp Tooth') {
-      result.push(animal + ' says "ROWR."')
-    }
-  }
-  return result
-}
+// const countSpaces = function (str){
+//   let count = 0
+//   for(let char of str){
+//     if(char === ' '){
+//       count++
+//     }
+//   }
+//   return count
+// }
 
-const womenOnly = function(arr){
-  const women = [];
-  for(let name of arr){
-    if(name.endsWith('F')){
-      women.push(name)
-    }
-  }
-  return women;
-}
+// const countTrues = function(booleans){
+//   let count = 0
+//   for(let bool of booleans){
+//     if(bool === true){
+//       count++
+//     }
+//   }
+//   return count
+// }
 
-const integersOnly = function(numbers){
-  const integers = []
-  for(let num of numbers){
-    if(num % 1 === 0){
-      integers.push(num)
-    }
-  }
-  return integers
-}
+// const makeFriendly = function(paragraph){
+//   let result = ''
+//   for (let char of paragraph){
+//     if(char === '.'){
+//       result += '!'
+//     }else{
+//       result += char
+//     }
+//   }
+//   return result
+// }
+
+// const cubeAll = function(arr){
+//   let result = []
+//   for (let num of arr){
+//     result.push(num ** 3)
+//   }
+//   return result
+// }
+
+// const addNoises = function(arr){
+//   let result = []
+//   for(animal of arr){
+//     if (animal === 'Fido' || animal === 'Rolph' || animal === 'Maisie') {
+//       result.push(animal + ' says "Woof!"')
+//     } else if (animal === 'Garfield' || animal === 'Heathcliff') {
+//       result.push(animal + ' says "Meow!"')
+//     } else if (animal === 'Barnie' || animal === 'Sharp Tooth') {
+//       result.push(animal + ' says "ROWR."')
+//     }
+//   }
+//   return result
+// }
+
+// const womenOnly = function(arr){
+//   const women = [];
+//   for(let name of arr){
+//     if(name.endsWith('F')){
+//       women.push(name)
+//     }
+//   }
+//   return women;
+// }
+
+// const integersOnly = function(numbers){
+//   const integers = []
+//   for(let num of numbers){
+//     if(num % 1 === 0){
+//       integers.push(num)
+//     }
+//   }
+//   return integers
+// }
 
 
 /*********************************

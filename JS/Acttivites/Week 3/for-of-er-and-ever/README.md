@@ -61,4 +61,4 @@ A filter:
 ##### Exercises
 
 * `womenOnly` - given an array of strings with names and gender, returns an array of only those strings where the gender (the last character in the string) is 'F'. **HINT:** you can check the character at last index of the string to see if it's an `F`, but there's also a string method that tells you if a string "ends with" another string. [Duck it!](https://duckduckgo.com/)
-* `integersOnly` - given an array of numbers, returns an array of only those numbers that are integers. **HINT:** you can use modulus for htis, it's just SEEMS weird to do so.
+* `integersOnly` - given an array of numbers, returns an array of only those numbers that are integers. **HINT:** you can use modulus for this, it's just SEEMS weird to do so.

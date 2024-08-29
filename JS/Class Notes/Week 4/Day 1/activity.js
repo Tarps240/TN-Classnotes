@@ -114,16 +114,90 @@ console.log(`${temperatureInCelsius}°C is ${temperatureInFahrenheit}°F`);
     // Overweight: BMI is 25 to 29.9
     // Obese: BMI is 30 or more
 
+    function calculateBMI(weight, height) {
 
+        // Calculate BMI
+        const bmi = weight / (height * height);
+    
+        // Determine the BMI category
+        let category;
+        if (bmi < 18.5) {
+            category = "Underweight";
+        } else if (bmi >= 18.5 && bmi <= 24.9) {
+            category = "Normal weight";
+        } else if (bmi >= 25 && bmi <= 29.9) {
+            category = "Overweight";
+        } else if (bmi >= 30) {
+            category = "Obese";
+        }
+    
+        // Return the BMI value and category
+        return { bmi: bmi.toFixed(2), category: category };
+    }
+    
+    const result = calculateBMI(70, 1.75);
+
+    console.log(`BMI: ${result.bmi}, Category: ${result.category}`);
+    
 
 
 // Write a function called checkSeason, it takes a month parameter and returns the season:Autumn, Winter, Spring or Summer.
 
+function checkSeason(month) {
 
+    // Convert the month to lowercase to handle case-insensitive input
+    month = month.toLowerCase();
 
+    // Determine the season based on the month
+    let season;
+    switch (month) {
+        case 'september':
+        case 'october':
+        case 'november':
+            season = 'Autumn';
+            break;
+        case 'december':
+        case 'january':
+        case 'february':
+            season = 'Winter';
+            break;
+        case 'march':
+        case 'april':
+        case 'may':
+            season = 'Spring';
+            break;
+        case 'june':
+        case 'july':
+        case 'august':
+            season = 'Summer';
+            break;
+        default:
+            season = 'Invalid month';
+    }
+
+    return season;
+}
+
+console.log(checkSeason('April'));  // Output: Spring
 
 // Math.max returns its largest argument. Write a function findMax that takes three arguments and returns their maximum with out using Math.max method.
     // console.log(findMax(0, 10, 5))
     // 10
     // console.log(findMax(0, -10, -2))
     // 0
+
+    function findMax(a, b, c) {
+
+        let max;    
+        if (a >= b && a >= c) {
+            max = a;
+        } else if (b >= a && b >= c) {
+            max = b;
+        } else {
+            max = c;
+        }
+    
+        return max;
+    }
+    
+    console.log(findMax(10, 20, 15));

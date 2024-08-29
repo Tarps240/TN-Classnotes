@@ -2,6 +2,21 @@
  * YOUR CODE HERE *
  ******************/
 
+function xify(inputString) {
+  let result = ''; // Initialize an empty string to hold the result
+  
+  // Loop through each character in the input string
+  for (let i = 0; i < inputString.length; i++) {
+      result += 'x'; // Append 'x' to the result for each character
+  }
+  
+  return result; // Return the resulting string
+}
+
+const originalString = "Hello World!";
+const replacedString = replaceWithX(originalString);
+console.log(replacedString);
+
 
 
  /********************************************

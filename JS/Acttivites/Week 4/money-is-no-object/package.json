@@ -1,0 +1,22 @@
+{
+  "name": "objective-reasoning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha -w main.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ci-wdi-900/objective-reasoning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ci-wdi-900/objective-reasoning/issues"
+  },
+  "homepage": "https://github.com/ci-wdi-900/objective-reasoning#readme",
+  "dependencies": {
+    "mocha": "^10.2.0"
+  }
+}
