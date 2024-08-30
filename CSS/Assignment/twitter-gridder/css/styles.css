@@ -3,10 +3,9 @@
     margin: 20px auto;
     background-color: #ffffff;
     border: 1px solid #e1e8ed;
-    border-radius: 8px;
     overflow: hidden;
     display: grid;
-    grid-template-rows: auto auto auto 1fr
+    grid-template-rows: 50px auto auto 1fr;
 }
 
 header {
@@ -19,18 +18,10 @@ header {
 
 .banner-img {
     height: 150px;
-    width: 400px;
     background-color: #1da1f2;
     background-image: url('../assets/header.png');
     background-size: cover;
     background-position: center;
-    grid-row: 2;
-}
-
-.back-arrow {
-    width: 50px;
-    height: 50px;
-    display: grid;
 }
 
 .twitter-check {

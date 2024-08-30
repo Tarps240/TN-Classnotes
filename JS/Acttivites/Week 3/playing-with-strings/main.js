@@ -1,7 +1,7 @@
 /******************
  * YOUR CODE HERE *
  ******************/
-
+//xify problem.
 function xify(inputString) {
   let result = ''; // Initialize an empty string to hold the result
   
@@ -14,8 +14,11 @@ function xify(inputString) {
 }
 
 const originalString = "Hello World!";
-const replacedString = replaceWithX(originalString);
+const replacedString = xify(originalString);
+
 console.log(replacedString);
+
+// yellingChars excersize.
 
 
 
