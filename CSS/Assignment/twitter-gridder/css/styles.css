@@ -5,23 +5,17 @@
     border: 1px solid #e1e8ed;
     overflow: hidden;
     display: grid;
-    grid-template-rows: 50px auto auto 1fr;
 }
 
 header {
     position: relative;
 }
 
-.start-tweet {
-    grid-row: 1;
-}
-
-.banner-img {
-    height: 150px;
-    background-color: #1da1f2;
-    background-image: url('../assets/header.png');
-    background-size: cover;
-    background-position: center;
+.tweet-head {
+    display: grid;
+    height: 50px;
+    grid-template-rows: 100px;
+    grid-template-columns: 1fr 3fr;
 }
 
 .twitter-check {
@@ -29,3 +23,17 @@ header {
     height: 40px;
     width: 40px;
 }
+
+.start-tweet {
+    grid-row: 1;
+}
+
+.banner {
+    height: 150px;
+    background-color: #1da1f2;
+    background-image: url('../assets/header.png');
+    background-size: cover;
+    background-position: center;
+}
+
+

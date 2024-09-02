@@ -6,11 +6,8 @@
     <title>Twitter Profile</title>
     <link rel="stylesheet" href="./css/styles1.css">
 </head>
-<body>
-    <div class="twitter-profile">
-        <header>
-            <div class="cover-photo"></div>
-            <div class="profile-section">
+<body class="container">
+    <span>
                 <img class="profile-picture" src="./assets/avatar.jpg" alt="Profile Picture">
                 <div class="profile-info">
                     <h1>SpaceX</h1>
@@ -21,22 +18,19 @@
                         <span>14.4M Followers</span>
                     </div>
                 </div>
-                <button class="follow-button">Follow</button>
-            </div>
-        </header>
+            <button class="follow-button">Follow</button>
+    </span>
         <nav class="navigation">
-            <span>Tweets</span>
-            <span>Tweets & replies</span>
-            <span>Media</span>
-            <span>Likes</span>
+            <ul>
+                <li>Tweets</li>
+                <li>Tweets & Replies</li>
+                <li>Media</li>
+                <li>Likes</li>
+            </ul>
         </nav>
         <div class="tweet">
             <img class="tweet-picture" src="./assets/avatar.jpg" alt="Tweet Picture">
-            <div class="tweet-content">
                 <p><strong>SpaceX</strong> @SpaceX · 12h</p>
-                <p>Now targeting two Falcon 9 launches of Starlink satellites on Thursday, February 4, pending range acceptance and recovery weather conditions...</p>
-            </div>
         </div>
-    </div>
-</body>
+        </body>
 </html>
