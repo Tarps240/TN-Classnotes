@@ -6,7 +6,7 @@ const myPersevereCodeObj = {
 // You won't change lines 1-3 above, but instead set and change the properties for each step below by writing NEW code underneath each comment.
 
 // Below, set the value of property `wait` to be "I object".
-myPersevereCodeObj.wait= 'I object'
+myPersevereCodeObj.wait = 'I object'
 
 console.log(myPersevereCodeObj.wait)
 

@@ -38,7 +38,7 @@ header {
     padding-left: 40px;
 }
 
-nav a {
+header nav a {
     height: 30px;
     color: var(--main-color);
     text-decoration: none;
@@ -104,6 +104,10 @@ nav a:hover {
     border: 5px solid var(--main-color);
 }
 
+.flex-item1 {
+    width: 100%;
+}
+
 .flex-item2 {
     width: 200px;
     height: 200px;
@@ -139,11 +143,20 @@ nav a:hover {
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-    color: var(--font-color);
-    border-right: 4px solid var(--font-color);
 }
 
-nav {
+.list-item {
+    list-style-type: none;
     text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
 
+.list-class > li {
+    color: var(--main-color);
+    padding: 0 10px;
+    padding-bottom: 6px;
+    margin: 0 10px;
+    font-size: 1.2em;
+    text-decoration: none;
 }
