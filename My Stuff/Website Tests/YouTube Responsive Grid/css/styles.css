@@ -74,104 +74,98 @@ nav a:hover {
 /* Work section */
 
 .work-section {
-    display: flex;
-    align-items: center;
-    gap: 20px;
     padding: 20px;
-    color: var(--font-color);
-}
-
-.work-section h1 {
-    border-right: 4px solid var(--font-color);
-    padding-right: 10px;
-    text-align: right;
-}
-
-.flex-container {
-    max-width: 1000px;
-    max-height: 100%;
-    justify-content: space-around;
-    gap: 20px;
+  }
+  
+  .work-section h1 {
+    text-align: left;
+    border-right: 4px solid #92ccce; /* Border on the right */
+    padding-right: 20px; /* Space between the text and the border */
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 2rem;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Main (hero) image styling */
+  .flex-item1 {
+    width: 100%; /* Main image takes full width */
+    max-width: 500px; /* Optional max width */
+    margin-bottom: 20px;
+    border: 3px solid #92ccce;
+  }
+  
+  .flex-item {
+    border: 3px solid #92ccce;
+  }
+  
+  /* Grid container for the smaller images */
+  .flex-grid {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
-    margin: 0 auto;
-}
-
-.hero-img {
-    width: 530px;
-    height: 300px;
-    border: 5px solid var(--main-color);
-}
-
-.flex-item1 {
-    width: 100%;
-}
-
-.flex-item2 {
-    width: 200px;
-    height: 200px;
-    background-color: var(--secondary-color);
-    border: 5px solid var(--main-color);
-}
-
-.flex-item3 {
-    width: 200px;
-    height: 200px;
-    background-color: var(--secondary-color);
-    border: 5px solid var(--main-color);
-}
-
-.flex-item4 {
-    width: 200px;
-    height: 200px;
-    background-color: var(--secondary-color);
-    border: 5px solid var(--main-color);
-}
-
-.flex-item5 {
-    width: 200px;
-    height: 200px;
-    background-color: var(--secondary-color);
-    border: 5px solid var(--main-color);
-}
-
-/* contact */
-
+    justify-content: center;
+    gap: 10px; /* Space between the smaller images */
+  }
+  
+  .flex-grid .flex-item {
+    width: 50%; /* Each smaller image is 48% to create a 2x2 grid */
+    max-width: 200px; /* Optional max width */
+  }
+  
+/* Basic styling for the article container */
 .contact {
-    padding: 20px;
-}
-
-.contact h1 {
-    text-align: center;
-}
-
-.contact-nav {
     display: flex;
     justify-content: space-between;
-}
-
-.list-class {
-    list-style: none;
-    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  
+  /* Styling for the h1 element and its container */
+  .contact > div:first-child {
+    flex: 0 1 auto;
+    padding-right: 10px; 
+    border-right: 4px solid var(--font-color);
+  }
+  
+  h1 {
     margin: 0;
-    padding: 0;
-}
-
-.list-item a {
-    text-decoration: none;
     color: var(--font-color);
-    font-weight: bold;
-    padding: 10px 15px;
-}
+  }
+  
+  /* Styling for the contact links */
+  .contact-nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    paddingt: 0;
+    margin: 0;
+    display: flex;
+    gap: 60px;
+  }
+  
+  /* Styling for each list item */
+  nav ul li {
+    text-align: right;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    border-bottom: 3px solid var(--font-color);
+    padding-bottom: 5px;
+  }
 
-.list-item a:hover {
-    background-color: #333;
-    color: #fff;
-    border-radius: 4px;
-}
-
-/* Responsive styling */
+  /* Responsive styling */
 @media (max-width: 768px) {
     .list-class {
         flex-direction: column;
