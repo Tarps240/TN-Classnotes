@@ -124,13 +124,18 @@
     gap: 10px;
 }
 
-/* Three dots styling with circular border */
-.three-dots {
-    width: 20px;
-    height: 20px;
-    border: 2px solid #1da1f2;
+.dot-container {
+    border: 1px solid #1da1f2;
     border-radius: 50%;
+    height: 45px;
+}
+
+/* Three dots styling */
+.three-dots {
+    width: 35px;
+    height: 10px;
     padding: 5px;
+    margin-top: 12.5px;
     cursor: pointer;
 }
 
