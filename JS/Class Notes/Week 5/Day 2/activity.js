@@ -9,33 +9,65 @@ const products = [
   { product: 'coffee', price: 10 },
   { product: 'tea', price: '' },
 ]
+
 // Explain the difference between forEach, map, filter, and reduce.
 
-
+// forEach(): Iterate over elements, does not return a new array.
+// map(): Transforms each element, returns a new array.
+// filter(): Filters elements based on a condition, returns a new array.
+// reduce(): Accumulates elements into a single value.
+// Each function serves a specific use case in array manipulation and iteration.
 
 // Define a callback function before you use it in forEach, map, filter or reduce.
 
+// Define the callback function
 
+function isOdd(num) {
+  return num % 2 !== 0;
+}
+
+// Use the callback function in filter
+
+const num1 = [1, 2, 3, 4, 5, 6];
+const oddNumbers = num1.filter(isOdd);
+
+console.log(oddNumbers);
 
 // Use forEach to console.log each country in the countries array.
 
+function logCountry(country) {
+  console.log(country);
+}
 
+countries.forEach(logCountry);
 
 // Use forEach to console.log each name in the names array.
 
+function allNames(name1) {
+  console.log(name1);
+}
 
+names.forEach(allNames);
 
 // Use forEach to console.log each number in the numbers array.
 
+function eachNumber(digit) {
+  console.log(digit);
+}
 
+numbers.forEach(eachNumber);
 
 // Use map to create a new array by changing each country to uppercase in the countries array.
 
+// const upperCaseCountries = countries.map((country) => country.toUpperCase());
 
+// console.log(upperCaseCountries);
 
 // Use map to create an array of countries length from countries array.
 
+const countriesLength = countries.length((country) => country.length());
 
+console.log(countriesLength);
 
 
 // Use map to create a new array by changing each number to square in the numbers array
