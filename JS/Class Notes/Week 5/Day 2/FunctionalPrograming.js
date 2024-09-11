@@ -112,10 +112,40 @@ const result = names.findIndex(name => name.length > 7);
 
 console.log(result);
 
-// some
+// some //
+// Definition: The some method tests whether at least one element in the array passes the test implemented by the provided function. It returns true if any element passes the test; otherwise, it returns false.
 
+// Usage: Used to check if at least one element in an array meets a condition.
+const numbers7 = [1, 2, 3];
+const hasEven = numbers7.some((num) => num % 2 === 0); // true
 
-// sort
-// Sorting string values
-// Sorting Numeric values
-// Sorting Object Arrays
+// sort //
+// Definition: The sort method sorts the elements of an array in place and returns the sorted array. The default sort order is based on converting elements to strings and comparing their sequences of UTF-16 code unit values.
+
+// Usage: Used to sort arrays alphabetically, numerically, or based on custom criteria. Sorting can be unstable for large arrays.
+const fruits = ["banana", "apple", "orange"];
+fruits.sort(); // ['apple', 'banana', 'orange']
+
+// Sorting string values //
+// Definition: When sorting strings, the sort method compares the UTF-16 code unit values of the characters. For more complex sorting, such as case-insensitive sorting, a custom comparison function can be provided.
+const words = ["Banana", "apple", "Orange"];
+words.sort((a, b) => a.localeCompare(b)); // ['apple', 'Banana', 'Orange']
+
+// Sorting Numeric values //
+// Definition: When sorting numbers, you must pass a comparison function because the default sort method converts numbers to strings, which can lead to incorrect sorting.
+
+// Usage: You provide a custom comparison function to ensure proper numerical sorting.
+// const numbers = [10, 5, 20, 3];
+// numbers.sort((a, b) => a - b); // [3, 5, 10, 20]
+
+// Sorting Object Arrays //
+// Definition: Sorting an array of objects requires a comparison function that determines how two objects should be compared, typically by comparing specific properties of the objects.
+
+// Usage: Commonly used when working with arrays of complex objects and sorting by specific fields.
+const people = [
+  { name: "John", age: 30 },
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 35 },
+];
+people.sort((a, b) => a.age - b.age);
+// [{ name: 'Alice', age: 25 }, { name: 'John', age: 30 }, { name: 'Bob', age: 35 }]
