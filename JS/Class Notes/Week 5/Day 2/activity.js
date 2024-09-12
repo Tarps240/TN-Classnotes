@@ -1,4 +1,4 @@
-const countries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand']
+const countries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland']
 const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 const products = [
@@ -59,66 +59,93 @@ numbers.forEach(eachNumber);
 
 // Use map to create a new array by changing each country to uppercase in the countries array.
 
+const countriesToUppercase = countries.map((country) => country.toUpperCase());
+  console.log(countriesToUppercase);
+
 // const upperCaseCountries = countries.map((country) => country.toUpperCase());
 
 // console.log(upperCaseCountries);
 
 // Use map to create an array of countries length from countries array.
 
-const countriesLength = countries.length((country) => country.length());
+// const countriesLength = countries.length((country) => country.length());
 
-console.log(countriesLength);
+// console.log(countriesLength);
 
 
 // Use map to create a new array by changing each number to square in the numbers array
 
+function squareNumber(num) {
+  return num * num;
+};
 
-
+const squaredNumbers = numbers.map(squareNumber);
+console.log(squaredNumbers);
 
 // Use map to change to each name to uppercase in the names array
 
-
+const uppercaseNames = names.map((name) => name.toUpperCase());
+console.log(uppercaseNames);
 
 
 // Use map to map the products array to its corresponding prices.
 
+function getProductPrice(item) {
+  return item.price;
+}
 
+const productPrices = products.map(getProductPrice);
+
+console.log(productPrices);
 
 
 // Use filter to filter out countries containing land.
 
+const countriesContainingLand = countries.filter((country) => country.includes("land"));
 
-
+console.log(countriesContainingLand);
 
 // Use filter to filter out countries having six character.
 
+const countriesHaveSixLetters = countries.filter((country) => country.length === 6);
 
-
+console.log(countriesHaveSixLetters);
 
 // Use filter to filter out countries containing six letters and more in the country array.
 
+const countriesHaveSixMoreLetters = countries.filter((country) => country.length >= 6);
 
+console.log(countriesHaveSixMoreLetters);
 
-// Use filter to filter out country start with 'E';
+// Use filter to filter out country start with 'E'
 
+const countriesNotStartingWithE = countries.filter(country => !country.startsWith('E'));
 
-
+console.log(countriesNotStartingWithE);
 
 // Use filter to filter out only prices with values.
 
+const itemsWithPrices = products.filter(item => item.price != null);
 
-
-
+console.log(itemsWithPrices);
 
 // Declare a function called getStringLists which takes an array as a parameter and then returns an array only with string items.
 
+function getStringLists(arr) {
+  return arr.filter(item => typeof item === 'string');
+}
 
+const mixedArray = [1, 'hello', true, 'world', 42, 'JavaScript', null];
+const stringArray = getStringLists(mixedArray);
+
+console.log(stringArray);
 
 
 // Use reduce to sum all the numbers in the numbers array.
 
+const sum = numbers.reduce((accum, currentValue) => accum + currentValue);
 
-
+console.log(sum);
 
 // Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
 
