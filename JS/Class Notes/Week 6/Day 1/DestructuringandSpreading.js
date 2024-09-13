@@ -3,9 +3,9 @@
 
 const numbers = [1, 4, 7, 67, 34, 23, 56];
 
-let [one, four, seven, sixSeven, threeFour, twoThree, fiveSix] = numbers;
+// let [one, four, seven, sixSeven, threeFour, twoThree, fiveSix] = numbers;
 
-console.log(seven, threeFour, fiveSix);
+// console.log(seven, threeFour, fiveSix);
 
 const fullStack = [
     [
@@ -85,11 +85,22 @@ console.log(h);
 
 // Spread operator to get the rest of array elements
 
+// const [firstNumber, ...restOfNumbers] = numbers;
 
+// console.log(firstNumber); // Output: 1
+// console.log(restOfNumbers);
+
+const num2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+let [one, two, three,...rest] = num2;
+console.log(one, two, three);
+console.log(rest);
 
 // Spread operator to copy array
 
+const copiedArray = [...numbers];
 
+console.log(copiedArray);
 
 // Spread operator to copy object
 
