@@ -11,6 +11,7 @@ countries.forEach(({name, capital, population, languages}) => {
 })
 
 // A junior developer structure student name, skills and score in array of arrays which may not easy to read. Destructure the following array name to name, skills array to skills, scores array to scores, JavaScript score to jsScore and React score to reactScore variable in one line.
+
     const student = ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]]
    
     //Destructure Here 
@@ -53,11 +54,9 @@ countries.forEach(({name, capital, population, languages}) => {
         //   }
         // ]
 
-
 // The map method is used to iterate over each student in the students array.
 // Each sub-array is destructured into name, skills, and scores.
 // Then, the function returns an array of objects with the keys name, skills, and scores for each student.
-
 
 // Copy the student object to newStudent without mutating the original object. In the new object add the following?
 
@@ -68,7 +67,6 @@ countries.forEach(({name, capital, population, languages}) => {
 // [...student[1]],
 // [...student[2]],
 // ];
-
 
 // Second Method.
 
@@ -118,6 +116,7 @@ newStudent.skills.dataScience.push('SQL');
 console.dir(newStudent, { depth:null });
 
 //This is the intended Outcome 
+
         //     {
         //     name: 'David',
         //     age: 25,
