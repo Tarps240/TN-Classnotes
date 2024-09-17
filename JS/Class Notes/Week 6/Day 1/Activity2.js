@@ -81,90 +81,80 @@ const student = {
 
 // Copy the student object to newStudent without mutating the original object. In the new object add the following?
 
-// copy initial array
+// copy initial array first method.
 
-const newStudent = {
-  ...student,
-  skills: {
-    frontEnd: student.skills.frontEnd.map(skill => ({ ...skill })), // Make a deep copy of the frontEnd array.
-    backEnd: student.skills.backEnd.map(skill => ({ ...skill })), // Make a deep copy of the backEnd array.
-    dataBase: student.skills.dataBase.map(skill => ({ ...skill })), // Make a deep copy of the dataBase array.
-    dataScience: [...student.skills.dataScience] // Make a deep copy of the dataScience array.
-  }
-};
+// const newStudent = {
+//   ...student,
+//   skills: {
+//     ...student.skills,
+//     frontEnd: student.skills.frontEnd.map(skill => ({ ...skill })),
+//     backEnd: student.skills.backEnd.map(skill => ({ ...skill })),
+//     dataBase: student.skills.dataBase.map(skill => ({ ...skill })),
+//     dataScience: [...student.skills.dataScience] // For arrays of primitive values
+//   }
+// };
 
-console.dir(newStudent, {depth:null}); // Log the newStudent array and expand the internal objects and arrays.
+// console.dir(newStudent, {depth:null});
+
+// Copy initial array second method.
+
+// const newStudent = {
+//   ...student,
+//   skills: {
+//     ...student.skills,
+//     frontEnd: [...student.skills.frontEnd],
+//     backEnd: [...student.skills.backEnd],
+//     dataBase: [...student.skills.dataBase],
+//     dataScience: [...student.skills.dataScience]
+//   }
+// };
+
+// console.dir(newStudent, {depth:null});
 
 // Add Bootstrap with level 8 to the front end skill sets
 
-const newStudent1 = {
-  ...student, 
-  skills: {
-    frontEnd: [
-      ...student.skills.frontEnd, // copy existing frontEnd skills
-      { skill: 'Bootstrap', level: 8 } // add new skill Bootstrap
-    ],
-    backEnd: student.skills.backEnd.map(skill => ({ ...skill })),   
-    dataBase: student.skills.dataBase.map(skill => ({ ...skill })), 
-    dataScience: [...student.skills.dataScience] 
-  }
-};
-
-console.dir(newStudent1, {depth:null});
+//newStudent.skills.frontEnd.push({ skill: 'Bootstrap', level: 8 });
 
 // Add Express with level 9 to the back end skill sets
 
-const newStudent2 = {
-  ...newStudent1,  // copy the newStudent1 object
-  skills: {
-    ...newStudent1.skills, // copy the skills object
-    frontEnd: [...newStudent1.skills.frontEnd], 
-    backEnd: [
-      ...newStudent1.skills.backEnd,  
-      { skill: 'Express', level: 9 } 
-    ],
-    dataBase: [...newStudent1.skills.dataBase], 
-    dataScience: [...newStudent1.skills.dataScience] 
-  }
-};
-
-console.dir(newStudent2, {depth:null});
+//newStudent.skills.backEnd.push({ skill: 'Express', level: 9 });
 
 // Add SQL with level 8 to the data base skill sets
 
-const newStudent3 = {
-  ...newStudent2,  
-  skills: {
-    ...newStudent2.skills,
-    frontEnd: [...newStudent2.skills.frontEnd],
-    backEnd: [...newStudent2.skills.backEnd],  
-    dataBase: [
-      ...newStudent2.skills.dataBase,
-      { skill: 'SQL', level: 8 } // add new skill SQL with level 8
-    ],
-    dataScience: [...newStudent2.skills.dataScience] 
-  }
-};
-
-console.dir(newStudent3, {depth:null});
+//newStudent.skills.dataBase.push({ skill: 'SQL', level: 8 });
 
 // Add SQL without level to the data science skill sets
 
-const newStudent4 = {
-  ...newStudent3,  
+//newStudent.skills.dataScience.push('SQL');
+
+// Accomplishing all tasks at once.
+
+const newStudent = {
+  ...student, // shallow copy of student
   skills: {
-    ...newStudent3.skills, 
-    frontEnd: [...newStudent3.skills.frontEnd], 
-    backEnd: [...newStudent3.skills.backEnd],  
-    dataBase: [...newStudent3.skills.dataBase], 
+    ...student.skills, // shallow copy of the skills object
+    frontEnd: [
+      ...student.skills.frontEnd, // shallow copy of frontEnd array
+      { skill: 'Bootstrap', level: 8 } // Add Bootstrap skill
+    ],
+    backEnd: [
+      ...student.skills.backEnd, // shallow copy of backEnd array
+      { skill: 'Express', level: 9 } // Add Express skill
+    ],
+    dataBase: [
+      ...student.skills.dataBase, // Copy dataBase array.
+      { skill: 'SQL', level: 8 } // Add SQL with level 8
+    ],
     dataScience: [
-      ...newStudent3.skills.dataScience, 
-      'SQL' // add SQL without a level
+      ...student.skills.dataScience, // Copy dataScience array.
+      'SQL' // Add SQL without level to dataScience.
     ]
   }
 };
 
-console.dir(newStudent4, {depth:null});
+// Output the newStudent object
+
+console.dir(newStudent, {depth:null});
 
 //This is the intended Outcome 
 
