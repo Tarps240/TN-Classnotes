@@ -29,6 +29,11 @@ class car {
       (this.inventory = 0);
   }
 
+  getCarInfo() {
+  let info = `This car is a ${this.year}, ${this.make} ${this.model}. We have ${this.inventory} in stock. They are ${this.color}.`
+    return info;
+  };
+
 // Class methods
 // getSpeed (terrain) {
 //   if (terrain == "city") {
@@ -66,11 +71,61 @@ car3.setInventory = 9;
 
 console.log(car1);
 console.log(car2);
-console.log(car3);
+console.log(car3.getCarInfo());
 console.log(car4);
 
 // Inheritance
 
+class trucks extends car {
+  constructor(make, model, year, color, AWD, inventory, loadWeight, doors, bedSize, towingCapacity, wheels) {
+    super(make, model, year, color, AWD, inventory);
+    this.loadWeight = loadWeight;
+    this.doors = doors;
+    this.bedSize = bedSize;
+    this.towingCapacity = towingCapacity;
+    this.wheels = wheels;
+  }
 
+  getCarInfo() {
+    let baseInfo = super.getCarInfo();
+    return `${baseInfo} With trucks, there are specific features you need to look for, for ${this.make} ${this.model}'s we have a loadweight of ${this.loadWeight} and a towing capacity of ${this.towingCapacity}. They have ${this.doors} doors and ${this.wheels} wheels. Finally, they have a ${this.bedSize} load bed.`
+  }
+
+} 
+
+const ranger = new trucks ("Ford", "Ranger", 1999, "green", false, 2, 1200, 2, "7ft", 2000, 4);
+
+console.log(ranger.getCarInfo());
+
+
+class sedan extends car {
+  constructor(make, model, year, color, AWD, inventory, engineSize, batteryPower, driveTrain, cargoSpace) {
+    super (make, model, year, color, AWD, inventory);
+    this.engineSize = engineSize;
+    this.batteryPower = batteryPower;
+    this.driveTrain = driveTrain;
+    this.cargoSpace = cargoSpace;
+  }
+}
+
+class convertible extends car {
+  constructor(make, model, year, color, AWD, inventory, topMaterial, numberOfSeats, rollBar) {
+    super (make, model, year, color, AWD, inventory);
+    this.topMaterial = topMaterial;
+    this.numberOfSeats = numberOfSeats;
+    this.rollBar = rollBar;
+  }
+
+}
+
+class suv extends car {
+  constructor(make, model, year, color, AWD, inventory, numberOfSeats, clearance) {
+    super (make, model, year, color, AWD, inventory);
+    this.numberOfSeats = numberOfSeats;
+    this.clearance = clearance;
+  }
+
+}
 
 // Overriding methods
+
