@@ -1,120 +1,141 @@
 /////////////////////////////////Document Object Model (DOM)/////////////////////////////
 // Getting Element
-    // Getting elements by tag name
+// Getting elements by tag name
 
-    let tag = document.getElementsByTagName("h1");
-    console.log(tag);
+// let tag = document.getElementsByTagName("h1");
+// console.log(tag);
 
-    console.log(tag.length);
+// console.log(tag.length);
 
-    for (let i = 0; i < tag.length; i++) {
-        console.log(tag[i]);
-    };
+// for (let i = 0; i < tag.length; i++) {
+//   console.log(tag[i]);
+// }
 
-    // Getting elements by class name
+// // Getting elements by class name
 
-    const className = document.getElementsByClassName("title");
+// const className = document.getElementsByClassName("title");
 
-    for (let i = 0; i < className.length; i++) {
-        console.log(className[i]);
-    };
+// for (let i = 0; i < className.length; i++) {
+//   console.log(className[i]);
+// }
 
-    // Getting an element by id
+// // Getting an element by id
 
-    const grabId = document.getElementById('first-title');
+// const grabId = document.getElementById("first-title");
 
-    console.log(grabId);
+// console.log(grabId);
 
-    // Getting elements by using querySelector methods
+// // Getting elements by using querySelector methods
 
-    document.querySelector("h1");
-    document.querySelector('#first-title');
-    document.querySelector(".title");
+// document.querySelector("h1");
+// document.querySelector("#first-title");
+// document.querySelector(".title");
 
-    // let firstTitle = document.querySelector("h1");
-    // let firstTitle = document.querySelector("#first-title");
-    // let firstTitle = document.querySelector(".title");
+// // let firstTitle = document.querySelector("h1");
+// // let firstTitle = document.querySelector("#first-title");
+// // let firstTitle = document.querySelector(".title");
 
-// Query Selector All.
+// // Query Selector All.
 
-    let everything = document.querySelectorAll("h1");
+// let everything = document.querySelectorAll("h1");
 
-    for (let i = 0; i < everything.length; i++) {
-        console.log(everything[i]);
-    }
+// for (let i = 0; i < everything.length; i++) {
+//   console.log(everything[i]);
+// }
 
+// // Adding attribute
+// // Adding attribute using setAttribute
 
-// Adding attribute
-    // Adding attribute using setAttribute
-    
-    let selection = document.querySelectorAll("h1");
+// let selection = document.querySelectorAll("h1");
 
-    // selection[3].className = "title";
-    // selection[3].id = "fourth-title";
+// // selection[3].className = "title";
+// // selection[3].id = "fourth-title";
 
-    // for (let i = 0; i < selection.length; i++) {
-    //     console.log(selection[i]);
-    // }
+// // for (let i = 0; i < selection.length; i++) {
+// //     console.log(selection[i]);
+// // }
 
-    // Adding attribute without setAttribute
-    
-   selection[3].setAttribute("class", "fancy");
-   selection[3].setAttribute("id", "boats");
+// // Adding attribute without setAttribute
 
-   for (let i = 0; i < selection.length; i++) {
-         console.log(selection[i]);
-    }
+// selection[3].setAttribute("class", "fancy");
+// selection[3].setAttribute("id", "boats");
 
-    // Adding class using classList
+// for (let i = 0; i < selection.length; i++) {
+//   console.log(selection[i]);
+// }
 
-    // Select the element to add the new class to. 
-    let headings = document.querySelectorAll("h1");
+// // Adding class using classList
 
-    // Add the class 'new-class' to the second <h1>
-    headings[1].classList.add("new-class");
+// // Select the element to add the new class to.
+// let headings = document.querySelectorAll("h1");
 
-    // Check that the class was added.
-    console.log(headings[1].className);
+// // Add the class 'new-class' to the second <h1>
+// headings[3].className = "New-Class";
+// headings[3].Id = "Fourth Title";
 
+// //with setattribute you can select the header (4th) element.
 
-    // Removing class using remove
+// headings[3].classList.add("Title", "Newer-Class", "Fresh-Class");
 
-    headings[1].classList.remove("new-class"); // Removes the 'new-class'
-    console.log(headings[1].className); // To confirm the class was removed
+// // Check that the class was added.
+// console.log(headings[1].className);
 
-// Adding Text to HTML element
-    // Adding Text content using textContent
+// // Removing class using remove
 
-    headings[0].textContent = "Welcome to the DOM World"; //Adding updated text to the first <h1> element.
-    console.log(headings[0].textContent); // Displays the updated text content of the first <h1>
+// headings[3].classList.remove("Fresh-Class"); // Removes the 'Fresh-Class'
+// console.log(headings[1].className); // To confirm the class was removed
 
-    // Adding Text Content using innerHTML
+// // Adding Text to HTML element
 
-    headings[1].innerHTML = "<span>This is a span inside an h1</span>";
-    console.log(headings[1].innerHTML); // Displays the updated inner HTML of the second <h1>
+// // Adding Text content using textContent
 
-    // Text Content
+// headings[0].textContent = "Welcome to the DOM World"; //Adding updated text to the first <h1> element.
 
-    headings[0].textContent = "Welcome to the DOM World";
-    console.log(headings[0].textContent);
+// console.log(headings[0].textContent); // Displays the updated text content of the first <h1>
 
-    // Inner HTML
+// // Adding Text Content using innerHTML
 
-    headings[1].innerHTML = "<span>This is a span inside an h1</span>";
-    console.log(headings[1].innerHTML); // Displays the updated inner HTML of the second <h1>
+// headings[1].innerHTML = "<span>This is a span inside an h1</span>";
+// console.log(headings[1].innerHTML); // Displays the updated inner HTML of the second <h1>
 
+// // Text Content
+
+// headings[0].textContent = "Welcome to the DOM World";
+// console.log(headings[0].textContent);
+
+// // Inner HTML
+
+// const techListItem = `<li>Python</li>
+// <li>Javascript</li>
+// <li>Java</li>
+// <li>React</li>`;
+// const unOrderedList = document.querySelector("ul");
+// unOrderedList.innerHTML = "";
 // Adding style
-    // Adding Style Color
 
-    headings[0].style.color = "blue";
-    console.log(headings[0].style.color);
+// Adding Style Color
 
-    // Adding Style Background Color
+const newStyle = document.querySelectorAll("h1");
+console.log(newStyle);
 
-    headings[1].style.backgroundColor = "lightgray";
-    console.log(headings[1].style.backgroundColor);
-    
-    // Adding Style Font Size
+newStyle.forEach((newStyle, i) =>  {
+   
 
-    headings[2].style.fontSize = "30px";
-    console.log(headings[2].style.fontSize);
+    if (i % 2 === 0) {
+        newStyle.style.color = "green";
+        newStyle.style.backgroundColor = "orange";
+    } else {
+        newStyle.style.color = "red";
+    }
+
+    // newStyle.style.background = "black";
+});
+
+// Adding Style Background Color
+
+
+
+
+// Adding Style Font Size
+
+
