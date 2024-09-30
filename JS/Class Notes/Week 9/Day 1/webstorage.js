@@ -1,6 +1,15 @@
 // /////////////////////////////////HTML5 Web Storage//////////////////////////
     // sessionStorage
 
+//     sessionStorage is a feature in HTML5 that allows you to store data in a key-value format within the browser for the duration of the page session. It is similar to localStorage but with one key difference: the data stored in sessionStorage is only available for the duration of the page session. This means that when the user closes the browser tab or window, the data is cleared, unlike localStorage where data persists even after the browser is closed.
+// Key Features of sessionStorage:
+
+//     Storage Scope: sessionStorage is specific to the tab or window. If you open multiple tabs of the same page, each tab will have its own separate sessionStorage. Data stored in one tab cannot be accessed in another tab, even if it's the same URL.
+
+//     Lifetime: The data stored in sessionStorage persists as long as the tab or window is open. Once the tab is closed, all data in sessionStorage is removed. However, if you reload the page or navigate within the same tab, the data will remain accessible.
+
+//     Storage Limit: Like localStorage, the size limit for sessionStorage is typically around 5 to 10MB, depending on the browser. It's enough to store small pieces of data like form inputs, user preferences, or session-specific states.
+
 
 
     // localStorage
