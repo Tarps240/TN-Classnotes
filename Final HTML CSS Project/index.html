@@ -3,40 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lernantino Header</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./assets/icofont/icofont.min.css">
+    <title>Final CSS HTML Project</title>
 </head>
 <body>
-    <section class="about-section">
-      <div class="about-title">
-        <h1>About<br>Me</h1>
-      </div>
-      <div class="about-content">
-        <p>Helvetica put a bird on it church-key Blue Bottle banjo bespoke brunch Etsy authentic Marfa quinoa typewriter plaid direct trade small batch wayfarers bicycle rights cliche craft beer gastropub single-origin coffee Godard Carles you probably haven't heard of them irony pickled kitsch synth sriracha gentrify literally heirloom blog Truffaut paleo scenester.</p>
-        <p>Echo Park sriracha Pinterest vegan biodiesel 90's irony iPhone Kickstarter Carles crucifix kitsch narwhal dreamcatcher pickled trust fund selvage art party letterpress Tumblr post-ironic kogi Thundercats Tonx Brooklyn Pitchfork Odd Future authentic normcore freegan leggings Schlitz chambray organic tousled retro fap squid street art church-key fashion axe Wes Anderson bespoke whatever gentrify banh mi you probably haven't heard of them American Apparel next level pug ugh.</p>
-      </div>
+
+    <!-- Top Nav -->
+
+    <div class="site-container">
+        <nav>
+            <div class="flag">
+                <h2 class="flag-text">Learnatino</h2>
+            </div>
+            <div class="menu">
+                <a href="#about">About Me</a>
+                <a href="#work">Work</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="mobile-menu">
+                <i class="icofont-navigation-menu"></i>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+        <!-- Remove unnecessary div here -->
+        <div class="content-box">
+            <span class="funny-text">San Fran at night</span>
+        </div>
     </section>
 
-    <section id="work" class="work-section">
-      <div class="work-item">
-          <img src="https://via.placeholder.com/400x300" alt="Surf Report">
-          <div class="work-item-title">Surf Report <br><small>MERN Stack</small></div>
-      </div>
-      <div class="work-item">
-          <img src="https://via.placeholder.com/400x300" alt="LED Wall">
-          <div class="work-item-title">LED Wall <br><small>Node/IoT</small></div>
-      </div>
-      <div class="work-item">
-          <img src="https://via.placeholder.com/400x300" alt="Calculator">
-          <div class="work-item-title">Calculator <br><small>React/JavaScript/CSS</small></div>
-      </div>
-      <div class="work-item">
-          <img src="https://via.placeholder.com/400x300" alt="Run Buddy">
-          <div class="work-item-title">Run Buddy <br><small>HTML/CSS</small></div>
-      </div>
-  </section>
-  
+    <!-- Main Content Section -->
+    <div class="content-flow" id="about">
+        <div class="content-sidebar">
+            <div class="col-l">
+                <h2>About Me</h2>
+            </div>
+            <div class="col-r">
+                <!-- Right content (e.g., description text) -->
+                <p>
+                    I am a former Network Administrator and Cryptographer who has just moved into Full Stack Web Development. I have experience with code breaking, help desk, Active Directory, Photoshop, InDesign, Illustrator and the entire Adobe Creative Suite. 
+                </p>
+            </div>
+        </div>
+    </div>
 
-  </body>
-  
-  </html>
+    <!-- Work Section -->
+    <!-- <section id="work" class="work-section"> -->
+    <div class="content-flow" id="work">
+        <div class="content-sidebar">
+            <div class="col-l">
+            <h2>Work</h2>
+            </div>
+
+            <!-- <article class = "wrapper"> -->
+            <!-- Add a container here to center content -->
+            <div class="col-r">
+                <!-- Large Image -->
+                <div class="large-item">
+                <a href = "https://tarps240.github.io/Social-Links-Profile/"><img src="./assets/images/Social links profile.png" alt="Surf Report">
+                <div class="work-item-title">Social Links</div></a>
+                </div>
+        
+                <!-- Smaller Images in a 2x2 grid -->
+                <div class="small-images">
+                <div class="work-item small-item">
+                    <a href="https://tarps240.github.io/Music-Player-App/"><img src="./assets/images/Music Player App.png" alt="Music App">
+                    <div class="work-item-title">Music Player</div></a>
+                </div>
+                <div class="work-item small-item">
+                    <a href="https://tarps240.github.io/Blog-preview-card/">
+                        <img src="./assets/images/Screenshot 2024-10-01 at 04-57-59 Frontend Mentor Blog preview card.png" alt="Blog Preview Card">
+                        <div class="work-item-title">Blog Preview Card</div>
+                    </a>
+                </div>
+                <div class="work-item small-item">
+                    <a href="https://tarps240.github.io/Recipe-page/">
+                        <img src="./assets/images/Recipe page.png" alt="Recipe Page">
+                        <div class="work-item-title">Recipe Page</div>
+                    </a>
+                </div>
+                <div class="work-item small-item">
+                    <a href="https://tarps240.github.io/QR-Code/">
+                        <img src="./assets/images/QR code component.png" alt="QR Code">
+                        <div class="work-item-title">QR Code</div>
+                    </a>
+                </div>
+                </div>
+            </div>
+            <!-- </article> End of container -->
+        </div>
+    </div>
+    <!-- </section> -->
+
+    <!-- Another Content Section -->
+    <div class="content-flow" id="contact">
+        <div class="content-sidebar">
+            <div class="col-l">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="col-r">
+                <ul class="contact-links">
+                    <li><a href="tel+9318963144" target="_blank">931.555.3144</a></li>
+                    <li><a href="https://github.com/Tarps240" target="_blank">GitHub</a></li>
+                    <li><a href="mailto:sl3966@gmail.com" target="_blank">sl3966@gmail.com</a></li>
+                    <li><a href="https://x.com/sl3966" target="_blank">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
