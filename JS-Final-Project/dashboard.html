@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellnessPal - Dashboard</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Hello, <span id="usernameDisplay">User</span>!</h1>
+        <div class="habit-summary">
+            <div class="habit-card">
+                <h2>Water Intake</h2>
+                <p id="waterIntake">0/8 cups</p>
+            </div>
+            <div class="habit-card">
+                <h2>Meals</h2>
+                <p id="mealsLogged">0/4 meals</p>
+            </div>
+            <div class="habit-card">
+                <h2>Exercise</h2>
+                <p id="exerciseDuration">0 min</p>
+            </div>
+            <div class="habit-card">
+                <h2>Sleep</h2>
+                <p id="sleepHours">0 hours</p>
+            </div>
+            <div class="habit-card">
+                <h2>Mood</h2>
+                <p id="moodStatus">Neutral</p>
+            </div>
+        </div>
+        <button class="btn" id="logOutBtn">Log Out</button>
+    </div>
+
+    <script src="./scripts/app.js"></script>
+</body>
+</html>
