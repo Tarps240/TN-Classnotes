@@ -87,14 +87,14 @@ input:focus {
     padding: 10px;
     margin-bottom: 8px;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
     width: 50%;
 }
 
 .btn:hover {
-    background-color: var(--color-darker-green);
-    color: white;
+    background-color: var(--color-background-white);
+    color: var(--color-neon-green);
 }
 
 p {
