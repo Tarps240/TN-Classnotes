@@ -3,37 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WellnessPal - Dashboard</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <title>FitLife - Dashboard</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <script src = "https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
     <div class="dashboard-container">
-        <h1>Hello, <span id="usernameDisplay">User</span>!</h1>
+        <h1>Welcome to your dashboard, <span id="usernameDisplay">User</span>!</h1>
+        <p>Select a category to log your activities.</p>
         <div class="habit-summary">
-            <div class="habit-card">
-                <h2>Water Intake</h2>
-                <p id="waterIntake">0/8 cups</p>
-            </div>
-            <div class="habit-card">
-                <h2>Meals</h2>
-                <p id="mealsLogged">0/4 meals</p>
-            </div>
-            <div class="habit-card">
-                <h2>Exercise</h2>
-                <p id="exerciseDuration">0 min</p>
-            </div>
-            <div class="habit-card">
-                <h2>Sleep</h2>
-                <p id="sleepHours">0 hours</p>
-            </div>
-            <div class="habit-card">
-                <h2>Mood</h2>
-                <p id="moodStatus">Neutral</p>
-            </div>
+
+            <a href="water.html" class="habit-card">
+                <canvas id = "waterPreview"></canvas>
+                Water Intake
+            </a>
+            <a href="meals.html" class="habit-card">
+                <canvas id = "mealsPreview"></canvas>
+                Meals
+            </a>
+            <a href="calories.html" class="habit-card">
+                <canvas id = "caloriePreview"></canvas>
+                Calories
+            </a>
+            <a href="sleep.html" class="habit-card">
+                <canvas id = "sleepPreview"></canvas>
+                Sleep
+            </a>
+            <a href="exercise.html" class="habit-card">
+                <canvas id = "exercisePreview"></canvas>
+                Exercise
+            </a>
         </div>
         <button class="btn" id="logOutBtn">Log Out</button>
     </div>
-
-    <script src="./scripts/app.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>

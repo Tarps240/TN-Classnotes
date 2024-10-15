@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife - Water Intake</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="page-container">
+        <h1>Water Intake</h1>
+        <canvas id="waterChart"></canvas>
+        <form id="waterForm">
+            <label for="water">Log your daily water intake in cups:</label>
+            <input type="number" id="water" min="0" max="8" required>
+            <button type="submit" class="btn">Log Water</button>
+        </form>
+    </div>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

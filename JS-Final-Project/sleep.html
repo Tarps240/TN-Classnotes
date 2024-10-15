@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellFit - Sleep</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="page-container">
+        <h1>Sleep</h1>
+        <canvas id="sleepChart"></canvas>
+        <form id="sleepForm">
+            <label for="sleep">How many hours of sleep did you get:</label>
+            <input type="number" id="sleep" min="0" max="24" required>
+            <button type="submit" class="btn">Log Sleep</button>
+        </form>
+        <button class="btn" id="backToDashboard">Back to Dashboard</button>
+    </div>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
