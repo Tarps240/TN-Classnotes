@@ -72,6 +72,10 @@ a:link {
     max-width: 50%;
 }
 
+.container {
+    height: 100vh;
+}
+
 /* Login Page Header Styles */
 
 .img-container {
