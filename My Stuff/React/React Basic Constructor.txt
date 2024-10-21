@@ -1,0 +1,19 @@
+React Basic Constructor
+
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props); // Always call super(props) to access `this.props` in the constructor
+    // You can initialize the state or bind methods here
+    this.state = {
+      someState: 'Initial state value'
+    };
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>{this.state.someState}</h1>
+      </div>
+    );
+  }
+}
