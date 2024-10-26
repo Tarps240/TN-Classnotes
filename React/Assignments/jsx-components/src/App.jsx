@@ -1,8 +1,4 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
 import './App.css'
-
-const rootElement = document.getElementById('root');
 
 const ColorBar = ({ color }) => {
     return (
@@ -17,6 +13,7 @@ const App = () => {
 
     return (
         <div className = "color-container">
+            <h1>My Color Bar App</h1>
             {colors.map((color, index) => (
         <ColorBar key={index} color={color} />
       ))}
