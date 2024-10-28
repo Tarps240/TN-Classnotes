@@ -1,12 +1,5 @@
 import './App.css'
-
-const ColorBar = ({ color }) => {
-    return (
-        <div className = 'color-bar' style={{ backgroundColor: color }}>
-            {color}
-        </div>
-    );
-}; 
+import ColorBar from './ColorBar';
 
 const App = () => {
     const colors = [ '#518cef', '#3b10c4', '#9aede6', '#8ee763', '#a30dd0' ];

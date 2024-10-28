@@ -1,0 +1,7 @@
+Eslint prop error fix:
+
+module.exports = {
+  rules: {
+    "react/prop-types": "off"
+  }
+};
