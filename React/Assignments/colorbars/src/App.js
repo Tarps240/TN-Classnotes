@@ -19,7 +19,7 @@ const App = () => {
       <ColorBar key={index} color={color} />
     ))}
       </div> 
-  );
+  );\
 
 };
 
