@@ -19,8 +19,7 @@ const App = () => {
       <ColorBar key={index} color={color} />
     ))}
       </div> 
-  );\
-
+  );
 };
 
 export default App;
