@@ -1,0 +1,76 @@
+/* ProfileCard.css */
+
+.profile-card {
+    max-width: 80vw;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f7fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-image {
+    width: 200px;
+    height: 250px;
+    margin-right: 15px;
+    border: 4px solid black;
+    border-radius: 10px;
+  }
+  
+  .profile-info h2 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .verified-badge {
+    color: #00c853; /* Green color for verified badge */
+    font-size: 1em;
+    margin-left: 5px;
+  }
+  
+  .profile-info p {
+    font-style: italic;
+    color: #757575;
+  }
+  
+  .skills-section {
+    margin: 20px 0;
+  }
+  
+  .skills-section h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  
+  .skill-badge {
+    background-color: #26c6da;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  
+  .join-date {
+    font-size: 0.9em;
+    color: #757575;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
