@@ -1,28 +1,52 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-
-
-class ColorBlocks extends React.Component {
+class ColorGrid extends React.Component {
   render() {
 
+    // Array of color codes to map through and assign to boxes.
+    const colors = [
+      "#4e417e", "#02dc92", "#dfbaa0", "#d8394e", "#7c31d3", "#7fcfd2", "#0e5d46", "#d98590",
+      "#7923d7", "#6e5eeb", "#2a176b", "#dea1d8", "#cbae6f", "#b6841d", "#62df7d", "#9e4d2c",
+      "#393b73", "#8cface", "#1a4f07", "#045529", "#04e754", "#697980", "#018120", "#5bdcc7",
+      "#7010b2", "#c50007", "#cfe583", "#cdb58e", "#298b5d", "#58e253", "#a9c3c5", "#66fec5",
+    ];
+
+    // Individual blocks styles.
     const blockStyle = {
-        color: 'white',
-        padding: '20px',
-        margin: '5px',
-        borderRadius: '5px',
-        border: '3px solid black',
-        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)'
+      color: "white",
+      aspectRatio: "1",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      fontSize: "18px",
+      boxSizing: "border-box",
+    };
+
+    // Overall grid container styles.
+    const gridContainerStyle = {
+      display: "grid",
+      gridTemplateColumns: "repeat(8, 1fr)",  // 8 columns
+      gridTemplateRows: "repeat(4, 1fr)",     // 4 rows
+      height: "95vh", 
+      width: "95vw", 
+      margin: "0 auto", 
+      gap: '5px',
     };
 
     return (
-      <div style={{ textAlign: 'center', maxWidth: '80vw', margin: 'auto' }}>
-        <h1>Here are some color bars!</h1>
-        <div style={{ ...blockStyle, backgroundColor: '#518cef'}}>#518cef</div>
-        <div style={{ ...blockStyle, backgroundColor: '#3b10c4'}}>#3b10c4</div>
-        <div style={{ ...blockStyle, backgroundColor: '#9aede6'}}>#9aede6</div>
-        <div style={{ ...blockStyle, backgroundColor: '#8ee763'}}>#8ee763</div>
-        <div style={{ ...blockStyle, backgroundColor: '#a30dd0'}}>#a30dd0</div>
+      <div style={{ textAlign: "center", margin: "20px" }}>
+        <h1>Hexadecimal Colors</h1>
+        <div style={gridContainerStyle}>
+
+          {/* Map over the colors array to create color squares dynamically */}
+
+          {colors.map((color, index) => (
+            <div key={index} style={{ ...blockStyle, backgroundColor: color }}>
+              {color}
+            </div>
+          ))}
+        </div>
       </div>
     );
   }
@@ -31,7 +55,7 @@ class ColorBlocks extends React.Component {
 const App = () => {
   return (
     <div>
-      <ColorBlocks />
+      <ColorGrid />
     </div>
   );
 };
