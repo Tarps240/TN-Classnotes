@@ -1,0 +1,71 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+const ColorGrid = ({ colors }) => {
+  // Define styles
+  const blockStyle = {
+    color: 'white',
+    aspectRatio: '1', // Ensures the box is a square
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: '14px',
+    border: '2px solid #fff',
+    boxSizing: 'border-box', // ensures padding/border don’t affect box size
+  };
+
+  const gridContainerStyle = {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(8, 1fr)', // 8 columns
+    gridTemplateRows: 'repeat(4, 1fr)',    // 4 rows
+    gap: '10px',                           // Adds space between boxes
+  };
+
+  const pageContainerStyle = {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: '100vh',
+    width: '100vw',
+    margin: '0',
+    padding: '0',
+    overflow: 'hidden',
+  };
+
+  return (
+    <div style={pageContainerStyle}>
+      <div style={gridContainerStyle}>
+        {/* Map over the colors array to create color squares dynamically */}
+        {colors.map((color, index) => (
+          <div key={index} style={{ ...blockStyle, backgroundColor: color }}>
+            {color}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const App = () => {
+  // Array of color codes (32 colors for an 8x4 grid)
+  const colors = [
+    '#518cef', '#3b10c4', '#9aede6', '#8ee763', '#a30dd0', '#ff6347', '#ffc107', '#8a2be2',
+    '#ff7f50', '#20b2aa', '#e9967a', '#9acd32', '#ff1493', '#00ced1', '#9400d3', '#ffa500',
+    '#7b68ee', '#adff2f', '#ff4500', '#ff69b4', '#00fa9a', '#dda0dd', '#ffb6c1', '#40e0d0',
+    '#6a5acd', '#ffdead', '#d2691e', '#8b008b', '#48d1cc', '#ff8c00', '#deb887', '#b0c4de'
+  ];
+
+  return (
+    <div>
+      {/* Pass the colors array as a prop */}
+      <ColorGrid colors={colors} />
+    </div>
+  );
+};
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <>
+    <App />
+  </>
+);
